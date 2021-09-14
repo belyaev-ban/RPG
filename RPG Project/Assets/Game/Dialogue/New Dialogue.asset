@@ -24,3 +24,7 @@ MonoBehaviour:
   - uid: c
     text: Go Away
     children: []
+  rootNode:
+    uid: 
+    text: 
+    children: []

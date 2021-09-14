@@ -53,10 +53,22 @@ namespace Dialogue.Editor
                 EditorGUILayout.LabelField("No dialogue selected");
                 return;
             }
-
+            
+            
+            
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                EditorGUILayout.LabelField(node.text);
+                EditorGUI.BeginChangeCheck();
+                EditorGUILayout.LabelField("Node: ");
+                string bufText = EditorGUILayout.TextField(node.text);
+                string bufUid = EditorGUILayout.TextField(node.uid);
+
+                if (EditorGUI.EndChangeCheck())
+                {
+                    Undo.RecordObject(_selectedDialogue, "Dialogue node updated");
+                    node.text = bufText;
+                    node.uid = bufUid;
+                }
             }
         }
     }
