@@ -3,21 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue 1.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
     </list>
@@ -86,7 +86,8 @@
       <workItem from="1631487535051" duration="84000" />
       <workItem from="1631487628559" duration="977000" />
       <workItem from="1631553800949" duration="5548000" />
-      <workItem from="1631651650735" duration="2244000" />
+      <workItem from="1631651650735" duration="2444000" />
+      <workItem from="1631733387849" duration="5981000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1631487562866</created>
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631570871352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changing text and uids through editor window">
+      <created>1631655293532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631655293532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +135,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="Dialogue Nodes and some editor parts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dialogue Nodes and some editor parts" />
+    <MESSAGE value="changing text and uids through editor window" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing text and uids through editor window" />
   </component>
 </project>

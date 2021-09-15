@@ -9,14 +9,13 @@ namespace Dialogue
     public class Dialogue : ScriptableObject
     {
         [SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
-        public DialogueNode rootNode = new DialogueNode();
 
         private void Awake()
         {
 #if UNITY_EDITOR
             if (nodes.Count == 0)
             {
-                nodes.Add(rootNode);
+                nodes.Add(new DialogueNode());
             }
 #endif
         }
