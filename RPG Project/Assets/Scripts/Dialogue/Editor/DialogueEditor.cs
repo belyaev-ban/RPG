@@ -66,7 +66,30 @@ namespace Dialogue.Editor
             ProcessEvents();
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                OnGUINode(node);
+                DrawNode(node);
+            }
+            foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
+            {
+                DrawConnections(node);
+            }
+        }
+
+        private void DrawConnections(DialogueNode node)
+        {
+            float bezierMultiplier = 0.8f;
+            
+            foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
+            {
+                Vector3 startPosition, endPosition, startTangent, endTangent;
+                startPosition = new Vector3(node.editorRect.xMax, node.editorRect.center.y);
+                endPosition = new Vector3(childNode.editorRect.xMin, childNode.editorRect.center.y);
+
+                startTangent = new Vector3(startPosition.x - (startPosition.x - endPosition.x) * bezierMultiplier,
+                    startPosition.y);
+                endTangent = new Vector3(endPosition.x - (endPosition.x - startPosition.x) * bezierMultiplier,
+                    endPosition.y);
+
+                Handles.DrawBezier(startPosition, endPosition, startTangent, endTangent, Color.white, null, 4f);
             }
         }
 
@@ -78,13 +101,13 @@ namespace Dialogue.Editor
                 _draggedNode = GetNodeAtPoint(Event.current.mousePosition);
                 if (_draggedNode != null)
                 {
-                    _dragOffset = Event.current.mousePosition - _draggedNode.editorPosition.position;
+                    _dragOffset = Event.current.mousePosition - _draggedNode.editorRect.position;
                 }
             } else if (Event.current.type == EventType.MouseDrag && _draggedNode != null)
             {
                 
                 Undo.RecordObject(_selectedDialogue, "Dialogue node moved");
-                _draggedNode.editorPosition.position = Event.current.mousePosition - _dragOffset;
+                _draggedNode.editorRect.position = Event.current.mousePosition - _dragOffset;
                 
                 GUI.changed = true;
             } else if (Event.current.type == EventType.MouseUp && _draggedNode != null)
@@ -94,9 +117,9 @@ namespace Dialogue.Editor
         }
 
 
-        private void OnGUINode(DialogueNode node)
+        private void DrawNode(DialogueNode node)
         {
-            GUILayout.BeginArea(node.editorPosition, _nodeStyle);
+            GUILayout.BeginArea(node.editorRect, _nodeStyle);
             
             EditorGUI.BeginChangeCheck();
             EditorGUILayout.LabelField("Node: ");
@@ -109,7 +132,7 @@ namespace Dialogue.Editor
                 node.text = bufText;
                 node.uid = bufUid;
             }
-            
+
             GUILayout.EndArea();
         }
         
@@ -119,7 +142,7 @@ namespace Dialogue.Editor
             DialogueNode result = null;
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                if (node.editorPosition.Contains(point))
+                if (node.editorRect.Contains(point))
                 {
                     result = node;
                 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Dialogue
 {
@@ -9,6 +10,6 @@ namespace Dialogue
         public string text;
         public string[] children;
 
-        public Rect editorPosition = new Rect(0, 0, 200, 80);
+        [FormerlySerializedAs("editorPosition")] public Rect editorRect = new Rect(0, 0, 200, 80);
     }
 }
