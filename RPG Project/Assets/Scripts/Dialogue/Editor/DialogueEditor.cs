@@ -10,10 +10,12 @@ namespace Dialogue.Editor
     public class DialogueEditor : EditorWindow
     {
         private Dialogue _selectedDialogue = null;
-        private GUIStyle _nodeStyle;
-        private DialogueNode _draggedNode = null;
-        private Vector2 _dragOffset;
-        
+        [NonSerialized] private DialogueNode _draggedNode = null;
+        [NonSerialized] private GUIStyle _nodeStyle;
+        [NonSerialized] private Vector2 _dragOffset;
+        [NonSerialized] private DialogueNode _creatingNode = null;
+        [NonSerialized] private DialogueNode _deletingNode = null;
+
         [MenuItem("Window/Dialogue/Editor")]
         private static void ShowWindow()
         {
@@ -66,11 +68,30 @@ namespace Dialogue.Editor
             ProcessEvents();
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                DrawNode(node);
+                DrawConnections(node);
             }
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                DrawConnections(node);
+                DrawNode(node);
+            }
+
+            ProcessNodesEvents();
+        }
+
+        private void ProcessNodesEvents()
+        {
+            if (_creatingNode != null)
+            {
+                Undo.RecordObject(_selectedDialogue, "Added DialogueNode");
+                _selectedDialogue.CreateNode(_creatingNode);
+                _creatingNode = null;
+            }
+
+            if (_deletingNode != null)
+            {
+                Undo.RecordObject(_selectedDialogue, "Deleted DialogueNode");
+                _selectedDialogue.DeleteNode(_deletingNode);
+                _deletingNode = null;
             }
         }
 
@@ -122,16 +143,24 @@ namespace Dialogue.Editor
             GUILayout.BeginArea(node.editorRect, _nodeStyle);
             
             EditorGUI.BeginChangeCheck();
-            EditorGUILayout.LabelField("Node: ");
             string bufText = EditorGUILayout.TextField(node.text);
-            string bufUid = EditorGUILayout.TextField(node.uid);
 
             if (EditorGUI.EndChangeCheck())
             {
                 Undo.RecordObject(_selectedDialogue, "Dialogue node updated");
                 node.text = bufText;
-                node.uid = bufUid;
             }
+
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button("+"))
+            {
+                _creatingNode = node;
+            }
+            if (GUILayout.Button("x"))
+            {
+                _deletingNode = node;
+            }
+            GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
         }

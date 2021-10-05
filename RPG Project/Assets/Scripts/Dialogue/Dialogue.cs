@@ -12,6 +12,9 @@ namespace Dialogue
         
         private Dictionary<string, DialogueNode> _nodeLookup = new Dictionary<string, DialogueNode>();
 
+        public Dialogue()
+        { }
+
         private void Awake()
         {
 #if UNITY_EDITOR
@@ -49,6 +52,29 @@ namespace Dialogue
                 {
                     yield return _nodeLookup[childUid];
                 }
+            }
+        }
+
+        public void CreateNode(DialogueNode parentNode)
+        {
+            DialogueNode newNode = new DialogueNode(parentNode);
+            parentNode.children.Add(newNode.uid);
+            nodes.Add(newNode);
+            OnValidate();
+        }
+
+        public void DeleteNode(DialogueNode nodeToBeDeleted)
+        {
+            nodes.Remove(nodeToBeDeleted);
+            OnValidate();
+            CleanDanglingChildren(nodeToBeDeleted);
+        }
+
+        private void CleanDanglingChildren(DialogueNode nodeToBeDeleted)
+        {
+            foreach (DialogueNode node in GetAllNodes())
+            {
+                node.children.Remove(nodeToBeDeleted.uid);
             }
         }
     }

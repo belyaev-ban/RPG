@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -6,10 +8,20 @@ namespace Dialogue
     [System.Serializable]
     public class DialogueNode
     {
-        public string uid;
+        public string uid = Guid.NewGuid().ToString();
         public string text;
-        public string[] children;
+        public List<string> children = new List<string>();
 
-        [FormerlySerializedAs("editorPosition")] public Rect editorRect = new Rect(0, 0, 200, 80);
+        public Rect editorRect = new Rect(0, 0, 200, 80);
+
+        public DialogueNode()
+        {
+        }
+
+        public DialogueNode(DialogueNode parentNode)
+        {
+            editorRect.x = parentNode.editorRect.x + parentNode.editorRect.width + 10;
+            editorRect.y = parentNode.editorRect.y;
+        }
     }
 }

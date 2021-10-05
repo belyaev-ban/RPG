@@ -29,8 +29,8 @@ MonoBehaviour:
     children: []
     editorRect:
       serializedVersion: 2
-      x: 534
-      y: 79
+      x: 541
+      y: 77
       width: 200
       height: 80
   - uid: c
@@ -52,7 +52,7 @@ MonoBehaviour:
     editorRect:
       serializedVersion: 2
       x: 992
-      y: 421
+      y: 420
       width: 200
       height: 80
   - uid: e
