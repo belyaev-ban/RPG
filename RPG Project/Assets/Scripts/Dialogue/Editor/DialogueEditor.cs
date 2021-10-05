@@ -15,6 +15,7 @@ namespace Dialogue.Editor
         [NonSerialized] private Vector2 _dragOffset;
         [NonSerialized] private DialogueNode _creatingNode = null;
         [NonSerialized] private DialogueNode _deletingNode = null;
+        [NonSerialized] private DialogueNode _linkingNode = null;
 
         [MenuItem("Window/Dialogue/Editor")]
         private static void ShowWindow()
@@ -78,23 +79,6 @@ namespace Dialogue.Editor
             ProcessNodesEvents();
         }
 
-        private void ProcessNodesEvents()
-        {
-            if (_creatingNode != null)
-            {
-                Undo.RecordObject(_selectedDialogue, "Added DialogueNode");
-                _selectedDialogue.CreateNode(_creatingNode);
-                _creatingNode = null;
-            }
-
-            if (_deletingNode != null)
-            {
-                Undo.RecordObject(_selectedDialogue, "Deleted DialogueNode");
-                _selectedDialogue.DeleteNode(_deletingNode);
-                _deletingNode = null;
-            }
-        }
-
         private void DrawConnections(DialogueNode node)
         {
             float bezierMultiplier = 0.8f;
@@ -136,8 +120,24 @@ namespace Dialogue.Editor
                 _draggedNode = null;
             }
         }
+        
+        private void ProcessNodesEvents()
+        {
+            if (_creatingNode != null)
+            {
+                Undo.RecordObject(_selectedDialogue, "Added DialogueNode");
+                _selectedDialogue.CreateNode(_creatingNode);
+                _creatingNode = null;
+            }
 
-
+            if (_deletingNode != null)
+            {
+                Undo.RecordObject(_selectedDialogue, "Deleted DialogueNode");
+                _selectedDialogue.DeleteNode(_deletingNode);
+                _deletingNode = null;
+            }
+        }
+        
         private void DrawNode(DialogueNode node)
         {
             GUILayout.BeginArea(node.editorRect, _nodeStyle);
@@ -151,21 +151,57 @@ namespace Dialogue.Editor
                 node.text = bufText;
             }
 
+            DrawNodeButtons(node);
+
+            GUILayout.EndArea();
+        }
+
+        private void DrawNodeButtons(DialogueNode node)
+        {
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("+"))
             {
                 _creatingNode = node;
+            }
+
+            if (_linkingNode is null)
+            {
+                if (GUILayout.Button("link"))
+                {
+                    _linkingNode = node;
+                }
+            }
+            else if (_linkingNode == node)
+            {
+                if (GUILayout.Button("cancel"))
+                {
+                    _linkingNode = null;
+                }
+            } else if (_linkingNode.children.Contains(node.uid))
+            {
+                if (GUILayout.Button("unlink"))
+                {
+                    Undo.RecordObject(_selectedDialogue, "Remove dialogue link");
+                    _linkingNode.children.Remove(node.uid);
+                    _linkingNode = null;
+                }
+            } else
+            {
+                if (GUILayout.Button("child"))
+                {
+                    Undo.RecordObject(_selectedDialogue, "Add dialogue link");
+                    _linkingNode.children.Add(node.uid);
+                    _linkingNode = null;
+                }
             }
             if (GUILayout.Button("x"))
             {
                 _deletingNode = node;
             }
             GUILayout.EndHorizontal();
-
-            GUILayout.EndArea();
         }
-        
-        
+
+
         private DialogueNode GetNodeAtPoint(Vector2 point)
         {
             DialogueNode result = null;
