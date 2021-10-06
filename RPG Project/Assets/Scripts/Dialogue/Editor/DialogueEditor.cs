@@ -10,12 +10,17 @@ namespace Dialogue.Editor
     public class DialogueEditor : EditorWindow
     {
         private Dialogue _selectedDialogue = null;
+        private Vector2 _scrollPosition = new Vector2();
+        
         [NonSerialized] private DialogueNode _draggedNode = null;
         [NonSerialized] private GUIStyle _nodeStyle;
         [NonSerialized] private Vector2 _dragOffset;
         [NonSerialized] private DialogueNode _creatingNode = null;
         [NonSerialized] private DialogueNode _deletingNode = null;
         [NonSerialized] private DialogueNode _linkingNode = null;
+
+        [NonSerialized] private bool _draggingCanvas = false;
+        [NonSerialized] private Vector2 _draggingCanvasOffset;
 
         [MenuItem("Window/Dialogue/Editor")]
         private static void ShowWindow()
@@ -67,6 +72,10 @@ namespace Dialogue.Editor
             }
 
             ProcessEvents();
+
+            _scrollPosition = EditorGUILayout.BeginScrollView(_scrollPosition);
+            GUILayoutUtility.GetRect(_selectedDialogue.windowSize.x, _selectedDialogue.windowSize.y);
+            
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
                 DrawConnections(node);
@@ -75,7 +84,9 @@ namespace Dialogue.Editor
             {
                 DrawNode(node);
             }
-
+            
+            EditorGUILayout.EndScrollView();
+            
             ProcessNodesEvents();
         }
 
@@ -108,9 +119,13 @@ namespace Dialogue.Editor
                 {
                     _dragOffset = Event.current.mousePosition - _draggedNode.editorRect.position;
                 }
+                else
+                {
+                    _draggingCanvas = true;
+                    _draggingCanvasOffset = Event.current.mousePosition + _scrollPosition;
+                }
             } else if (Event.current.type == EventType.MouseDrag && _draggedNode != null)
             {
-                
                 Undo.RecordObject(_selectedDialogue, "Dialogue node moved");
                 _draggedNode.editorRect.position = Event.current.mousePosition - _dragOffset;
                 
@@ -118,6 +133,14 @@ namespace Dialogue.Editor
             } else if (Event.current.type == EventType.MouseUp && _draggedNode != null)
             {
                 _draggedNode = null;
+            } else if (Event.current.type == EventType.MouseDrag && _draggingCanvas)
+            {
+                _scrollPosition = _draggingCanvasOffset - Event.current.mousePosition;
+                
+                GUI.changed = true;
+            } else if (Event.current.type == EventType.MouseUp && _draggingCanvas)
+            {
+                _draggingCanvas = false;
             }
         }
         
@@ -207,7 +230,7 @@ namespace Dialogue.Editor
             DialogueNode result = null;
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                if (node.editorRect.Contains(point))
+                if (node.editorRect.Contains(point + _scrollPosition))
                 {
                     result = node;
                 }

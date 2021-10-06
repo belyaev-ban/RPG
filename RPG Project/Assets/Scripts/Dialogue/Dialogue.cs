@@ -8,6 +8,8 @@ namespace Dialogue
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue", order = 0)]
     public class Dialogue : ScriptableObject
     {
+        public Vector2 windowSize = new Vector2(4000, 4000);
+        
         [SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
         
         private Dictionary<string, DialogueNode> _nodeLookup = new Dictionary<string, DialogueNode>();
