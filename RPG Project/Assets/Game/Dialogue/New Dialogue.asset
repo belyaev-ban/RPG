@@ -1,5 +1,154 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7907891781363931815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_ef12925b-7135-4f0f-a114-70af1ad540e0
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 610
+    width: 200
+    height: 80
+  text: "\u0434\u0443\u0431\u0430"
+--- !u!114 &-7684901786341305644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_d7786268-b252-434d-911a-9a45316feec4
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_2db90759-bf02-478a-bd64-d3bd9bb6e560
+  - DialogueNode_2e4b855a-b826-4be1-a654-c269d7609bde
+  - DialogueNode_c7463741-8642-48f7-9d54-d1585a9b99eb
+  editorRect:
+    serializedVersion: 2
+    x: 647
+    y: 277
+    width: 200
+    height: 80
+  text: "\u0431\u043E\u0431\u0440\u044F\u043A"
+--- !u!114 &-6830377168623435100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_f40ec7e7-9f04-4cf9-8824-b83dc021d743
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_d7786268-b252-434d-911a-9a45316feec4
+  - DialogueNode_943ce255-df74-40b4-8c48-4211cc8e686f
+  editorRect:
+    serializedVersion: 2
+    x: 315
+    y: 428
+    width: 200
+    height: 80
+  text: "\u0425\u043E\u043C\u044F\u043A"
+--- !u!114 &-5118867733308560523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_7dd7c658-5d7b-499b-a441-29b00cd3145a
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 700
+    width: 200
+    height: 80
+  text: "\u0431\u0440\u044F\u043A"
+--- !u!114 &-4838235605045867318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_c7463741-8642-48f7-9d54-d1585a9b99eb
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 896
+    y: 313
+    width: 200
+    height: 80
+  text: "\u0431\u0440\u044F\u043A"
+--- !u!114 &-522654300513723213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_2e4b855a-b826-4be1-a654-c269d7609bde
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 223
+    width: 200
+    height: 80
+  text: "\u0434\u0443\u0431\u0430"
+--- !u!114 &-180401772253218267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_943ce255-df74-40b4-8c48-4211cc8e686f
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_1c73b7d5-b704-4bd5-a6ce-78efec4fca9a
+  - DialogueNode_218385d9-02bf-4ddc-8e47-557bd496d905
+  - DialogueNode_ef12925b-7135-4f0f-a114-70af1ad540e0
+  - DialogueNode_7dd7c658-5d7b-499b-a441-29b00cd3145a
+  editorRect:
+    serializedVersion: 2
+    x: 656
+    y: 576
+    width: 200
+    height: 80
+  text: "\u043D\u0435 \u0431\u043E\u0431\u0440\u044F\u043A"
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,73 +161,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
+  windowSize: {x: 4000, y: 4000}
   nodes:
-  - uid: a
-    text: test0
-    children:
-    - b
-    - c
-    editorRect:
-      serializedVersion: 2
-      x: 124
-      y: 383
-      width: 200
-      height: 80
-  - uid: b
-    text: test1
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 541
-      y: 77
-      width: 200
-      height: 80
-  - uid: c
-    text: test2
-    children:
-    - d
-    - f
-    - g
-    - e
-    editorRect:
-      serializedVersion: 2
-      x: 538
-      y: 693
-      width: 200
-      height: 80
-  - uid: d
-    text: "\u0425\u043E\u043C\u044F\u043A"
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 992
-      y: 420
-      width: 200
-      height: 80
-  - uid: e
-    text: "\u0411\u043E\u0431\u0440\u044F\u043A"
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 992
-      y: 693
-      width: 200
-      height: 80
-  - uid: f
-    text: "\u0441 \u0434\u0443\u0431\u0430"
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 993
-      y: 511
-      width: 200
-      height: 80
-  - uid: g
-    text: "\u0431\u0440\u044F\u043A"
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 993
-      y: 603
-      width: 200
-      height: 80
+  - {fileID: -6830377168623435100}
+  - {fileID: -7684901786341305644}
+  - {fileID: -180401772253218267}
+  - {fileID: 3127885818211075091}
+  - {fileID: -522654300513723213}
+  - {fileID: -4838235605045867318}
+  - {fileID: 5124423767873740628}
+  - {fileID: 8483345405250712357}
+  - {fileID: -7907891781363931815}
+  - {fileID: -5118867733308560523}
+--- !u!114 &3127885818211075091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_2db90759-bf02-478a-bd64-d3bd9bb6e560
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 130
+    width: 200
+    height: 80
+  text: "\u0441"
+--- !u!114 &5124423767873740628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_1c73b7d5-b704-4bd5-a6ce-78efec4fca9a
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 427
+    width: 200
+    height: 80
+  text: "\u0442\u043E\u0436\u0435"
+--- !u!114 &8483345405250712357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_218385d9-02bf-4ddc-8e47-557bd496d905
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 897
+    y: 522
+    width: 200
+    height: 80
+  text: "\u0441"

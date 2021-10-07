@@ -12,55 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
   m_Name: New Dialogue 1
   m_EditorClassIdentifier: 
+  windowSize: {x: 4000, y: 4000}
   nodes:
-  - uid: ad1f1241-148c-4370-9a37-bfae7e683cd6
-    text: 
-    children:
-    - e492bde8-75a3-4cf5-9232-111ee279e1fc
-    editorRect:
-      serializedVersion: 2
-      x: 445
-      y: 600
-      width: 200
-      height: 80
-  - uid: e492bde8-75a3-4cf5-9232-111ee279e1fc
-    text: 
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 1015
-      y: 178
-      width: 200
-      height: 80
-  - uid: 0efde364-ea12-4fc8-96aa-814cf978c74d
-    text: 
-    children:
-    - cd24d6f2-8bae-491a-be21-f59229aeb9a0
-    editorRect:
-      serializedVersion: 2
-      x: 430
-      y: 143
-      width: 200
-      height: 80
-  - uid: cd24d6f2-8bae-491a-be21-f59229aeb9a0
-    text: 
-    children: []
-    editorRect:
-      serializedVersion: 2
-      x: 1018
-      y: 520
-      width: 200
-      height: 80
-  - uid: cd19f923-fb8d-4ee9-af15-0ed7ec1afae9
-    text: 
-    children:
-    - 0efde364-ea12-4fc8-96aa-814cf978c74d
-    - ad1f1241-148c-4370-9a37-bfae7e683cd6
-    - e492bde8-75a3-4cf5-9232-111ee279e1fc
-    - cd24d6f2-8bae-491a-be21-f59229aeb9a0
-    editorRect:
-      serializedVersion: 2
-      x: 94
-      y: 363
-      width: 200
-      height: 80
+  - {fileID: 1464560912465671717}
+--- !u!114 &1464560912465671717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_7b77d5f2-c155-458d-8306-1496acc4c903
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 488
+    y: 491
+    width: 200
+    height: 80
+  text: 

@@ -101,8 +101,8 @@ namespace Dialogue.Editor
             foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
             {
                 Vector3 startPosition, endPosition, startTangent, endTangent;
-                startPosition = new Vector3(node.editorRect.xMax, node.editorRect.center.y);
-                endPosition = new Vector3(childNode.editorRect.xMin, childNode.editorRect.center.y);
+                startPosition = new Vector3(node.EditorRect.xMax, node.EditorRect.center.y);
+                endPosition = new Vector3(childNode.EditorRect.xMin, childNode.EditorRect.center.y);
 
                 startTangent = new Vector3(startPosition.x - (startPosition.x - endPosition.x) * bezierMultiplier,
                     startPosition.y);
@@ -121,18 +121,19 @@ namespace Dialogue.Editor
                 _draggedNode = GetNodeAtPoint(Event.current.mousePosition);
                 if (_draggedNode != null)
                 {
-                    _dragOffset = Event.current.mousePosition - _draggedNode.editorRect.position;
+                    _dragOffset = Event.current.mousePosition - _draggedNode.EditorRect.position;
+                    Selection.activeObject = _draggedNode;
                 }
                 else
                 {
                     _draggingCanvas = true;
                     _draggingCanvasOffset = Event.current.mousePosition + _scrollPosition;
+                    Selection.activeObject = _selectedDialogue;
                 }
             } else if (Event.current.type == EventType.MouseDrag && _draggedNode != null)
             {
-                Undo.RecordObject(_selectedDialogue, "Dialogue node moved");
-                _draggedNode.editorRect.position = Event.current.mousePosition - _dragOffset;
-                
+                _draggedNode.SetPosition(Event.current.mousePosition - _dragOffset);
+
                 GUI.changed = true;
             } else if (Event.current.type == EventType.MouseUp && _draggedNode != null)
             {
@@ -152,14 +153,12 @@ namespace Dialogue.Editor
         {
             if (_creatingNode != null)
             {
-                Undo.RecordObject(_selectedDialogue, "Added DialogueNode");
                 _selectedDialogue.CreateNode(_creatingNode);
                 _creatingNode = null;
             }
 
             if (_deletingNode != null)
             {
-                Undo.RecordObject(_selectedDialogue, "Deleted DialogueNode");
                 _selectedDialogue.DeleteNode(_deletingNode);
                 _deletingNode = null;
             }
@@ -167,16 +166,9 @@ namespace Dialogue.Editor
         
         private void DrawNode(DialogueNode node)
         {
-            GUILayout.BeginArea(node.editorRect, _nodeStyle);
+            GUILayout.BeginArea(node.EditorRect, _nodeStyle);
             
-            EditorGUI.BeginChangeCheck();
-            string bufText = EditorGUILayout.TextField(node.text);
-
-            if (EditorGUI.EndChangeCheck())
-            {
-                Undo.RecordObject(_selectedDialogue, "Dialogue node updated");
-                node.text = bufText;
-            }
+            node.Text = EditorGUILayout.TextField(node.Text);
 
             DrawNodeButtons(node);
 
@@ -186,11 +178,11 @@ namespace Dialogue.Editor
         private void DrawNodeButtons(DialogueNode node)
         {
             GUILayout.BeginHorizontal();
-            if (GUILayout.Button("+"))
+            if (GUILayout.Button("x"))
             {
-                _creatingNode = node;
+                _deletingNode = node;
             }
-
+            
             if (_linkingNode is null)
             {
                 if (GUILayout.Button("link"))
@@ -204,26 +196,25 @@ namespace Dialogue.Editor
                 {
                     _linkingNode = null;
                 }
-            } else if (_linkingNode.children.Contains(node.uid))
+            } else if (_linkingNode.Children.Contains(node.name))
             {
                 if (GUILayout.Button("unlink"))
                 {
-                    Undo.RecordObject(_selectedDialogue, "Remove dialogue link");
-                    _linkingNode.children.Remove(node.uid);
+                    _linkingNode.RemoveChild(node.name);
                     _linkingNode = null;
                 }
             } else
             {
                 if (GUILayout.Button("child"))
                 {
-                    Undo.RecordObject(_selectedDialogue, "Add dialogue link");
-                    _linkingNode.children.Add(node.uid);
+                    _linkingNode.AddChild(node.name);
                     _linkingNode = null;
                 }
             }
-            if (GUILayout.Button("x"))
+            
+            if (GUILayout.Button("+"))
             {
-                _deletingNode = node;
+                _creatingNode = node;
             }
             GUILayout.EndHorizontal();
         }
@@ -234,7 +225,7 @@ namespace Dialogue.Editor
             DialogueNode result = null;
             foreach (DialogueNode node in _selectedDialogue.GetAllNodes())
             {
-                if (node.editorRect.Contains(point + _scrollPosition))
+                if (node.EditorRect.Contains(point + _scrollPosition))
                 {
                     result = node;
                 }

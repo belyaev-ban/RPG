@@ -1,27 +1,61 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Dialogue
 {
-    [System.Serializable]
-    public class DialogueNode
+    public class DialogueNode : ScriptableObject
     {
-        public string uid = Guid.NewGuid().ToString();
-        public string text;
-        public List<string> children = new List<string>();
+        [SerializeField] private List<string> children = new List<string>();
+        [SerializeField] private Rect editorRect = new Rect(0, 0, 200, 80);
+        [SerializeField] private string text;
 
-        public Rect editorRect = new Rect(0, 0, 200, 80);
+        public List<string> Children => children;
+        public Rect EditorRect => editorRect;
 
-        public DialogueNode()
+        public string Text
         {
+            get => text;
+            set
+            {
+                if (value != text)
+                {
+                    Undo.RecordObject(this, "Dialogue node updated");
+                    text = value;
+                }
+            }
         }
 
-        public DialogueNode(DialogueNode parentNode)
+#if UNITY_EDITOR
+        private void Awake()
         {
-            editorRect.x = parentNode.editorRect.x + parentNode.editorRect.width + 10;
-            editorRect.y = parentNode.editorRect.y;
+            name = "DialogueNode_" + Guid.NewGuid().ToString();
         }
+
+        public void SetPosition(Vector2 newPosition)
+        {
+            Undo.RecordObject(this, "Dialogue node moved");
+            editorRect.position = newPosition;
+        }
+        
+        public void SetPosition(DialogueNode parentNode)
+        {
+            SetPosition(new Vector2(parentNode.editorRect.x + parentNode.editorRect.width + 10, parentNode.editorRect.y));
+        }
+
+        public void RemoveChild(string nodeName)
+        {
+            Undo.RecordObject(this, "Removed dialogue link");
+            children.Remove(nodeName);
+        }
+
+        public void AddChild(string nodeName)
+        {
+            Undo.RecordObject(this, "Add dialogue link");
+            children.Add(nodeName);
+        }
+#endif
     }
 }
