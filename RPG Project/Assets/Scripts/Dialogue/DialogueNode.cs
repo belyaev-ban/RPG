@@ -24,6 +24,7 @@ namespace Dialogue
                 {
                     Undo.RecordObject(this, "Dialogue node updated");
                     text = value;
+                    EditorUtility.SetDirty(this); //for some reason Undo does not working correctly in that aspect
                 }
             }
         }
@@ -38,6 +39,7 @@ namespace Dialogue
         {
             Undo.RecordObject(this, "Dialogue node moved");
             editorRect.position = newPosition;
+            EditorUtility.SetDirty(this); //for some reason Undo does not working correctly in that aspect
         }
         
         public void SetPosition(DialogueNode parentNode)
@@ -49,12 +51,14 @@ namespace Dialogue
         {
             Undo.RecordObject(this, "Removed dialogue link");
             children.Remove(nodeName);
+            EditorUtility.SetDirty(this); //for some reason Undo does not working correctly in that aspect
         }
 
         public void AddChild(string nodeName)
         {
             Undo.RecordObject(this, "Add dialogue link");
             children.Add(nodeName);
+            EditorUtility.SetDirty(this); //for some reason Undo does not working correctly in that aspect
         }
 #endif
     }
