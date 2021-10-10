@@ -12,6 +12,8 @@ namespace Dialogue
         [SerializeField] private Rect editorRect = new Rect(0, 0, 200, 80);
         [SerializeField] private string text;
 
+        [SerializeField] private bool isPlayerSpeaking = false; //probably want to change it to enum later?
+
         public List<string> Children => children;
         public Rect EditorRect => editorRect;
 
@@ -28,6 +30,8 @@ namespace Dialogue
                 }
             }
         }
+
+        public bool IsPlayerSpeaking => isPlayerSpeaking;
 
 #if UNITY_EDITOR
         private void Awake()
@@ -58,6 +62,13 @@ namespace Dialogue
         {
             Undo.RecordObject(this, "Add dialogue link");
             children.Add(nodeName);
+            EditorUtility.SetDirty(this); //Fix for Undo not working correctly in subassets
+        }
+
+        public void SetSpeaker(bool newSpeaker)
+        {
+            Undo.RecordObject(this, "Speaker changed");
+            isPlayerSpeaking = newSpeaker;
             EditorUtility.SetDirty(this); //Fix for Undo not working correctly in subassets
         }
 #endif

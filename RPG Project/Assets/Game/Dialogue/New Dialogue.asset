@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_e21f509a-7f22-4707-83b6-80af8e033595
+  m_Name: DialogueNode_b41c84b2-0e33-4add-92a0-6c939d1c34c1
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -20,6 +20,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0434\u0443\u0431\u0430"
+  isPlayerSpeaking: 0
 --- !u!114 &-7684901786341305644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_7845be99-a7e3-4fa5-ba68-2725616bed4a
+  m_Name: DialogueNode_3cfaa351-38a9-457e-b36a-60ffde59e972
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_2db90759-bf02-478a-bd64-d3bd9bb6e560
@@ -39,6 +40,9 @@ MonoBehaviour:
   - DialogueNode_04a1ff03-99b6-4844-9572-1e0fba49003e
   - DialogueNode_f793d99f-6a4f-488f-9a33-bd9a1eaa1839
   - DialogueNode_a2c132d0-3261-45d7-ab5f-b54663be6b9c
+  - DialogueNode_b8c98244-6387-4b0b-9460-22b71df719ee
+  - DialogueNode_6d467cf6-967b-4950-9d8c-a93b3c22c85e
+  - DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
   editorRect:
     serializedVersion: 2
     x: 647
@@ -46,6 +50,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0431\u043E\u0431\u0440\u044F\u043A"
+  isPlayerSpeaking: 1
 --- !u!114 &-6830377168623435100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +61,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_9fbad429-db13-4163-8485-f6ba5c8c26d0
+  m_Name: DialogueNode_c1f8cb48-958f-4f30-b1b6-f9f961684462
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_d7786268-b252-434d-911a-9a45316feec4
@@ -64,6 +69,9 @@ MonoBehaviour:
   - DialogueNode_7845be99-a7e3-4fa5-ba68-2725616bed4a
   - DialogueNode_f3c4f191-229b-4f9c-8a56-dbe1b2826a86
   - DialogueNode_a2c132d0-3261-45d7-ab5f-b54663be6b9c
+  - DialogueNode_a9628eb1-f0bd-4b71-a11f-71cb6d72751f
+  - DialogueNode_3cfaa351-38a9-457e-b36a-60ffde59e972
+  - DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
   editorRect:
     serializedVersion: 2
     x: 315
@@ -71,6 +79,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0425\u043E\u043C\u044F\u043A"
+  isPlayerSpeaking: 0
 --- !u!114 &-5118867733308560523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,16 +90,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_0469485e-b0d2-4868-943d-4f984dd8a957
+  m_Name: DialogueNode_24822167-8b55-4173-9e3a-cdd9a470a829
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 897
+    x: 896
     y: 700
     width: 200
     height: 80
   text: "\u0431\u0440\u044F\u043A"
+  isPlayerSpeaking: 0
 --- !u!114 &-4838235605045867318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_a2c132d0-3261-45d7-ab5f-b54663be6b9c
+  m_Name: DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -111,6 +121,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0431\u0440\u044F\u043A"
+  isPlayerSpeaking: 0
 --- !u!114 &-522654300513723213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +132,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_f793d99f-6a4f-488f-9a33-bd9a1eaa1839
+  m_Name: DialogueNode_6d467cf6-967b-4950-9d8c-a93b3c22c85e
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -131,6 +142,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0434\u0443\u0431\u0430"
+  isPlayerSpeaking: 0
 --- !u!114 &-180401772253218267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +153,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_f3c4f191-229b-4f9c-8a56-dbe1b2826a86
+  m_Name: DialogueNode_a9628eb1-f0bd-4b71-a11f-71cb6d72751f
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_1c73b7d5-b704-4bd5-a6ce-78efec4fca9a
@@ -152,13 +164,18 @@ MonoBehaviour:
   - DialogueNode_624d3fc1-0afe-4810-983a-2795a03c8552
   - DialogueNode_e21f509a-7f22-4707-83b6-80af8e033595
   - DialogueNode_0469485e-b0d2-4868-943d-4f984dd8a957
+  - DialogueNode_db252328-a8ad-4847-aca0-a78221c078c2
+  - DialogueNode_962a1eac-c80b-465d-ad1b-728444da9553
+  - DialogueNode_b41c84b2-0e33-4add-92a0-6c939d1c34c1
+  - DialogueNode_24822167-8b55-4173-9e3a-cdd9a470a829
   editorRect:
     serializedVersion: 2
-    x: 656
+    x: 658
     y: 576
     width: 200
     height: 80
   text: "\u043D\u0435 \u0431\u043E\u0431\u0440\u044F\u043A"
+  isPlayerSpeaking: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +210,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_04a1ff03-99b6-4844-9572-1e0fba49003e
+  m_Name: DialogueNode_b8c98244-6387-4b0b-9460-22b71df719ee
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -203,6 +220,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0441"
+  isPlayerSpeaking: 0
 --- !u!114 &5124423767873740628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +231,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_6fa7d739-9f5b-4c39-8f3a-0b110ff7564a
+  m_Name: DialogueNode_d44205b3-78e7-4d2a-a98b-282516dbf3b5
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -223,6 +241,7 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0442\u043E\u0436\u0435"
+  isPlayerSpeaking: 0
 --- !u!114 &8483345405250712357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +252,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_624d3fc1-0afe-4810-983a-2795a03c8552
+  m_Name: DialogueNode_962a1eac-c80b-465d-ad1b-728444da9553
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -243,3 +262,4 @@ MonoBehaviour:
     width: 200
     height: 80
   text: "\u0441"
+  isPlayerSpeaking: 0

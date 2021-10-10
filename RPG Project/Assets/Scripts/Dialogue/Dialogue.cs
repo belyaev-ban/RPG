@@ -62,6 +62,7 @@ namespace Dialogue
             {
                 parentNode.AddChild(newNode.name);
                 newNode.SetPosition(parentNode);
+                newNode.SetSpeaker(!parentNode.IsPlayerSpeaking);
             }
             Undo.RecordObject(this, "Added DialogueNode");
             nodes.Add(newNode);

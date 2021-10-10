@@ -14,6 +14,7 @@ namespace Dialogue.Editor
         
         [NonSerialized] private DialogueNode _draggedNode = null;
         [NonSerialized] private GUIStyle _nodeStyle;
+        [NonSerialized] private GUIStyle _playerNodeStyle;
         [NonSerialized] private Vector2 _dragOffset;
         [NonSerialized] private DialogueNode _creatingNode = null;
         [NonSerialized] private DialogueNode _deletingNode = null;
@@ -51,6 +52,13 @@ namespace Dialogue.Editor
             _nodeStyle = new GUIStyle();
             _nodeStyle.normal.background = Texture2D.grayTexture;
             _nodeStyle.padding = new RectOffset(5, 5, 10, 10);
+
+            //чет дичь какая-то - надо будет переделать
+            _playerNodeStyle = new GUIStyle();
+            Texture2D playerTexture = new Texture2D(1, 1);
+            playerTexture.SetPixels(new []{Color.red});
+            _playerNodeStyle.normal.background = playerTexture;
+            _playerNodeStyle.padding = new RectOffset(5, 5, 10, 10);
         }
 
 
@@ -166,7 +174,8 @@ namespace Dialogue.Editor
         
         private void DrawNode(DialogueNode node)
         {
-            GUILayout.BeginArea(node.EditorRect, _nodeStyle);
+            GUIStyle style = node.IsPlayerSpeaking ? _playerNodeStyle : _nodeStyle;
+            GUILayout.BeginArea(node.EditorRect, style);
             
             node.Text = EditorGUILayout.TextField(node.Text);
 
