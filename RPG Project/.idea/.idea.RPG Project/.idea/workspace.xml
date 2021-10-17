@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="typo">
+    <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Editor/DialogueEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +29,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://E:/projects/unity/learn/rpg_dialog/RPG/RPG Project/Assets/Game/Dialogue/New Dialogue.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/68/a50c0b79/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/projects/unity/learn/rpg_dialog/RPG/RPG Project/Assets/Scripts/Dialogue/DialogueNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ad584e208e14caaa9e6b2e6027e9204760400/44/9d252a0a/OnOpenAssetAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/projects/unity/learn/rpg_dialog/RPG/RPG Project/Assets/Scripts/Dialogue/DialogueNode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/projects/unity/learn/rpg_dialog/RPG/RPG Project/Assets/Game/Dialogue/New Dialogue.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xy4wBPOD8wvuMFhbfq6jFHwfok" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -86,7 +92,11 @@
       <workItem from="1633460292734" duration="6709000" />
       <workItem from="1633556121735" duration="3478000" />
       <workItem from="1633639953518" duration="5648000" />
-      <workItem from="1633893109079" duration="4186000" />
+      <workItem from="1633893109079" duration="4836000" />
+      <workItem from="1634154161561" duration="595000" />
+      <workItem from="1634209945068" duration="593000" />
+      <workItem from="1634210774043" duration="13000" />
+      <workItem from="1634498030792" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1631487562866</created>
@@ -165,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633894553597</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="different speakers in dialogue">
+      <created>1633898183019</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633898183019</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +216,7 @@
     <MESSAGE value="Dialogue Nodes now scriptable objects" />
     <MESSAGE value="fix for nested assets not saving" />
     <MESSAGE value="typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="typo" />
+    <MESSAGE value="different speakers in dialogue" />
+    <option name="LAST_COMMIT_MESSAGE" value="different speakers in dialogue" />
   </component>
 </project>
