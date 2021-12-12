@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1266; Version 2009; 64bit' Language: 'ru' Physical Memory: 32700 MB
+OS: 'Windows 10 Pro; OS build 19044.1387; Version 2009; 64bit' Language: 'ru' Physical Memory: 32700 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ E:/projects/unity/learn/rpg_dialog/RPG/RPG Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59259
+61468
 Successfully changed project path to: E:/projects/unity/learn/rpg_dialog/RPG/RPG Project
 E:/projects/unity/learn/rpg_dialog/RPG/RPG Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -30,94 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
     Vendor:   
     VRAM:     10077 MB
-    Driver:   30.0.14.9613
+    Driver:   30.0.14.9709
 Initialize mono
 Mono path[0] = 'D:/Program Files/Unity/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000851 seconds.
+Registered in 0.000930 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 41.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 42.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
+- Completed reload, in  0.883 seconds
 Domain Reload Profiling:
-	ReloadAssembly (831ms)
-		BeginReloadAssembly (42ms)
+	ReloadAssembly (883ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (344ms)
-			LoadAssemblies (41ms)
+		EndReloadAssembly (364ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (119ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (145ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (152ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (41ms)
+				RefreshPlugins (43ms)
 				BeforeProcessingInitializeOnLoad (10ms)
-				ProcessInitializeOnLoadAttributes (67ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002541 seconds.
+Registered in 0.002545 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.905 seconds
+- Completed reload, in  0.996 seconds
 Domain Reload Profiling:
-	ReloadAssembly (905ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (996ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (748ms)
-			LoadAssemblies (68ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (830ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (220ms)
+			SetupTypeCache (242ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (335ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (375ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (207ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.1 MB.
-System memory in use after: 103.2 MB.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.5 MB.
 
-Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 2626.
-Total: 5.412400 ms (FindLiveObjects: 0.151200 ms CreateObjectMapping: 0.066500 ms MarkObjects: 5.126400 ms  DeleteObjects: 0.067300 ms)
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 2628.
+Total: 5.403400 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.072100 ms MarkObjects: 5.046100 ms  DeleteObjects: 0.101600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,64 +131,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/DialogueUILesson.unity
-  artifactKey: Guid(0c3d1882d6bc51e47b5894f59d9ec697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/DialogueUILesson.unity using Guid(0c3d1882d6bc51e47b5894f59d9ec697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91c6368e8dbf21076343a29a93f3c7a') in 0.015695 seconds 
-  Import took 0.041388 seconds .
+  path: Assets/Game/Dialogue/New Dialogue.asset
+  artifactKey: Guid(eafcf84f8eb42e84e9dd32b2ae2992aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Dialogue/New Dialogue.asset using Guid(eafcf84f8eb42e84e9dd32b2ae2992aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1c1d94f05dd88b517955af6cb7c8c2') in 0.039456 seconds 
+  Import took 0.042840 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1391.470693 seconds.
-  path: Assets/2l3mq2x4i7u61.jpg
-  artifactKey: Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2l3mq2x4i7u61.jpg using Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1ee1168ae8689fdffd9636cf132b81') in 0.085725 seconds 
-  Import took 0.091951 seconds .
+  Time since last request: 27.219173 seconds.
+  path: Assets/Game/Dialogue/TestDialogue.asset
+  artifactKey: Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Dialogue/TestDialogue.asset using Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Dialogue.Dialogue.OnValidate () [0x00040] in E:\projects\unity\learn\rpg_dialog\RPG\RPG Project\Assets\Scripts\Dialogue\Dialogue.cs:35 
+
+(Filename: Assets/Scripts/Dialogue/Dialogue.cs Line: 35)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Dialogue.Dialogue.OnValidate () [0x00040] in E:\projects\unity\learn\rpg_dialog\RPG\RPG Project\Assets\Scripts\Dialogue\Dialogue.cs:35 
+  at Dialogue.Dialogue.Awake () [0x00001] in E:\projects\unity\learn\rpg_dialog\RPG\RPG Project\Assets\Scripts\Dialogue\Dialogue.cs:21 
+
+(Filename: Assets/Scripts/Dialogue/Dialogue.cs Line: 35)
+
+ -> (artifact id: 'f368fb98a343932af886bdd6addddb05') in 0.010974 seconds 
+  Import took 0.013580 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.622601 seconds.
-  path: Assets/2l3mq2x4i7u61.jpg
-  artifactKey: Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2l3mq2x4i7u61.jpg using Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a758c309631f02ffbf954b2a90f177ae') in 0.011641 seconds 
-  Import took 0.015269 seconds .
+  Time since last request: 74.422599 seconds.
+  path: Assets/Game/Characters/Player/Player.prefab
+  artifactKey: Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Characters/Player/Player.prefab using Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fad4bbac992c50cd292dffc54a4c55') in 0.116143 seconds 
+  Import took 0.122827 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 227.255736 seconds.
-  path: Assets/2l3mq2x4i7u61.jpg
-  artifactKey: Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2l3mq2x4i7u61.jpg using Guid(0ef9590df290fec42ba4ebb953a5d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572a94342fca3a1f5bb237cb31f87b1d') in 0.094562 seconds 
-  Import took 0.124735 seconds .
+  Time since last request: 0.001844 seconds.
+  path: Assets/Game/Characters/Player/Player.prefab
+  artifactKey: Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Characters/Player/Player.prefab using Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fad4bbac992c50cd292dffc54a4c55') in 0.023979 seconds 
+  Import took 0.028197 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 867.020000 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.006023 seconds 
-  Import took 0.012512 seconds .
+  Time since last request: 15.138323 seconds.
+  path: Assets/Game/Characters/Player/Player.prefab
+  artifactKey: Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Characters/Player/Player.prefab using Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b581a73082f21c4b306b8215f90952') in 0.028362 seconds 
+  Import took 0.033238 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000642 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.002466 seconds 
-  Import took 0.005840 seconds .
+  Time since last request: 15.152099 seconds.
+  path: Assets/Game/Dialogue/TestDialogue.asset
+  artifactKey: Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Dialogue/TestDialogue.asset using Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee7c57062f3ffd1497647165c0b1687') in 0.003677 seconds 
+  Import took 0.006901 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.332767 seconds.
-  path: Assets/DialogueUILesson
-  artifactKey: Guid(6edcd0d70f4e2bb4eb81a80b8083a7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueUILesson using Guid(6edcd0d70f4e2bb4eb81a80b8083a7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595a0e40f48f071063fc1cc9b58fe857') in 0.005623 seconds 
-  Import took 0.008700 seconds .
+  Time since last request: 0.000607 seconds.
+  path: Assets/Game/Dialogue/TestDialogue.asset
+  artifactKey: Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Dialogue/TestDialogue.asset using Guid(84aee0d10b6008446b3b76776d2b7758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee7c57062f3ffd1497647165c0b1687') in 0.003495 seconds 
+  Import took 0.006843 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 8.791115 seconds.
-  path: Assets/DialogueUILesson/Button.prefab
-  artifactKey: Guid(76402da01fd96e54cab49f69b4d95267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DialogueUILesson/Button.prefab using Guid(76402da01fd96e54cab49f69b4d95267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda9d06726b6cd689ead1daa4f944277') in 0.063977 seconds 
-  Import took 0.081340 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002521 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (923ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (776ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (231ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2181 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.6 MB.
+System memory in use after: 118.8 MB.
 
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2640.
+Total: 5.700800 ms (FindLiveObjects: 0.182300 ms CreateObjectMapping: 0.076800 ms MarkObjects: 5.417600 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

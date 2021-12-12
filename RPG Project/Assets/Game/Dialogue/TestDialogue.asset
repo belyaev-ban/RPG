@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7907891781363931815
+--- !u!114 &-8497528199875401772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,48 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_b41c84b2-0e33-4add-92a0-6c939d1c34c1
-  m_EditorClassIdentifier: 
-  children: []
-  editorRect:
-    serializedVersion: 2
-    x: 897
-    y: 611
-    width: 200
-    height: 80
-  text: "\u0434\u0443\u0431\u0430"
-  isPlayerSpeaking: 0
---- !u!114 &-7684901786341305644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_3cfaa351-38a9-457e-b36a-60ffde59e972
+  m_Name: DialogueNode_f1e28456-9c98-4b77-ba0b-95b483840fd3
   m_EditorClassIdentifier: 
   children:
-  - DialogueNode_2db90759-bf02-478a-bd64-d3bd9bb6e560
-  - DialogueNode_2e4b855a-b826-4be1-a654-c269d7609bde
-  - DialogueNode_c7463741-8642-48f7-9d54-d1585a9b99eb
-  - DialogueNode_04a1ff03-99b6-4844-9572-1e0fba49003e
-  - DialogueNode_f793d99f-6a4f-488f-9a33-bd9a1eaa1839
-  - DialogueNode_a2c132d0-3261-45d7-ab5f-b54663be6b9c
-  - DialogueNode_b8c98244-6387-4b0b-9460-22b71df719ee
-  - DialogueNode_6d467cf6-967b-4950-9d8c-a93b3c22c85e
-  - DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
+  - DialogueNode_ab1c5781-aed3-4bb4-919f-c0a8d289aa8c
+  - DialogueNode_e3f19bcc-9a66-4f9a-a41f-59c9bbdf3fda
+  - DialogueNode_dcf770ac-511c-403d-926d-1bbda40938d7
   editorRect:
     serializedVersion: 2
-    x: 647
-    y: 277
+    x: 629
+    y: 276
     width: 200
     height: 80
-  text: "\u0431\u043E\u0431\u0440\u044F\u043A"
+  text: Beaver
   isPlayerSpeaking: 1
---- !u!114 &-6830377168623435100
+--- !u!114 &-8470442626043976543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,26 +34,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_c1f8cb48-958f-4f30-b1b6-f9f961684462
+  m_Name: DialogueNode_a49f1034-ba0f-49f9-8110-06da1aee10c4
   m_EditorClassIdentifier: 
   children:
-  - DialogueNode_d7786268-b252-434d-911a-9a45316feec4
-  - DialogueNode_943ce255-df74-40b4-8c48-4211cc8e686f
-  - DialogueNode_7845be99-a7e3-4fa5-ba68-2725616bed4a
-  - DialogueNode_f3c4f191-229b-4f9c-8a56-dbe1b2826a86
-  - DialogueNode_a2c132d0-3261-45d7-ab5f-b54663be6b9c
-  - DialogueNode_a9628eb1-f0bd-4b71-a11f-71cb6d72751f
-  - DialogueNode_3cfaa351-38a9-457e-b36a-60ffde59e972
-  - DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
+  - DialogueNode_f1e28456-9c98-4b77-ba0b-95b483840fd3
+  - DialogueNode_add6649f-c140-49d2-aa42-fa6a4351f496
   editorRect:
     serializedVersion: 2
-    x: 315
-    y: 427
+    x: 417
+    y: 360
     width: 200
     height: 80
-  text: "\u0425\u043E\u043C\u044F\u043A"
+  text: Hamster
   isPlayerSpeaking: 0
---- !u!114 &-5118867733308560523
+--- !u!114 &-1750192988656386121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,18 +57,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_24822167-8b55-4173-9e3a-cdd9a470a829
+  m_Name: DialogueNode_82313bb3-7a47-4e62-b02b-623829238911
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 896
-    y: 700
+    x: 839
+    y: 634
     width: 200
     height: 80
-  text: "\u0431\u0440\u044F\u043A"
+  text: Oak
   isPlayerSpeaking: 0
---- !u!114 &-4838235605045867318
+--- !u!114 &-272672805439438456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,18 +78,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_3225a5d6-3968-4c79-94b7-b58e53eb8c3f
+  m_Name: DialogueNode_e3f19bcc-9a66-4f9a-a41f-59c9bbdf3fda
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 896
-    y: 313
+    x: 839
+    y: 276
     width: 200
     height: 80
-  text: "\u0431\u0440\u044F\u043A"
+  text: Oak
   isPlayerSpeaking: 0
---- !u!114 &-522654300513723213
+--- !u!114 &-163285562537090345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,50 +99,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_6d467cf6-967b-4950-9d8c-a93b3c22c85e
+  m_Name: DialogueNode_71116741-a323-4395-be67-ac33b6c53e74
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 897
-    y: 223
+    x: 837
+    y: 449
     width: 200
     height: 80
-  text: "\u0434\u0443\u0431\u0430"
+  text: Too
   isPlayerSpeaking: 0
---- !u!114 &-180401772253218267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_a9628eb1-f0bd-4b71-a11f-71cb6d72751f
-  m_EditorClassIdentifier: 
-  children:
-  - DialogueNode_1c73b7d5-b704-4bd5-a6ce-78efec4fca9a
-  - DialogueNode_218385d9-02bf-4ddc-8e47-557bd496d905
-  - DialogueNode_ef12925b-7135-4f0f-a114-70af1ad540e0
-  - DialogueNode_7dd7c658-5d7b-499b-a441-29b00cd3145a
-  - DialogueNode_6fa7d739-9f5b-4c39-8f3a-0b110ff7564a
-  - DialogueNode_624d3fc1-0afe-4810-983a-2795a03c8552
-  - DialogueNode_e21f509a-7f22-4707-83b6-80af8e033595
-  - DialogueNode_0469485e-b0d2-4868-943d-4f984dd8a957
-  - DialogueNode_db252328-a8ad-4847-aca0-a78221c078c2
-  - DialogueNode_962a1eac-c80b-465d-ad1b-728444da9553
-  - DialogueNode_b41c84b2-0e33-4add-92a0-6c939d1c34c1
-  - DialogueNode_24822167-8b55-4173-9e3a-cdd9a470a829
-  editorRect:
-    serializedVersion: 2
-    x: 658
-    y: 576
-    width: 200
-    height: 80
-  text: "\u043D\u0435 \u0431\u043E\u0431\u0440\u044F\u043A"
-  isPlayerSpeaking: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,21 +120,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
-  m_Name: New Dialogue
+  m_Name: TestDialogue
   m_EditorClassIdentifier: 
   windowSize: {x: 4000, y: 4000}
   nodes:
-  - {fileID: -6830377168623435100}
-  - {fileID: -7684901786341305644}
-  - {fileID: -180401772253218267}
-  - {fileID: 3127885818211075091}
-  - {fileID: -522654300513723213}
-  - {fileID: -4838235605045867318}
-  - {fileID: 5124423767873740628}
-  - {fileID: 8483345405250712357}
-  - {fileID: -7907891781363931815}
-  - {fileID: -5118867733308560523}
---- !u!114 &3127885818211075091
+  - {fileID: -8470442626043976543}
+  - {fileID: -8497528199875401772}
+  - {fileID: 3066129130242011439}
+  - {fileID: 6986640157421458610}
+  - {fileID: -272672805439438456}
+  - {fileID: 3229358910949816201}
+  - {fileID: -163285562537090345}
+  - {fileID: 3247186279903592051}
+  - {fileID: -1750192988656386121}
+  - {fileID: 7441186884724038614}
+--- !u!114 &3066129130242011439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,18 +144,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_b8c98244-6387-4b0b-9460-22b71df719ee
+  m_Name: DialogueNode_add6649f-c140-49d2-aa42-fa6a4351f496
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_71116741-a323-4395-be67-ac33b6c53e74
+  - DialogueNode_ff32cf03-2029-4672-9119-23a3872590db
+  - DialogueNode_82313bb3-7a47-4e62-b02b-623829238911
+  - DialogueNode_ea3f3043-f22f-4248-a3a9-94b17d052b0a
+  editorRect:
+    serializedVersion: 2
+    x: 627
+    y: 449
+    width: 200
+    height: 80
+  text: Not Beaver
+  isPlayerSpeaking: 1
+--- !u!114 &3229358910949816201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_dcf770ac-511c-403d-926d-1bbda40938d7
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 897
-    y: 130
+    x: 840
+    y: 366
     width: 200
     height: 80
-  text: "\u0441"
+  text: Briak
   isPlayerSpeaking: 0
---- !u!114 &5124423767873740628
+--- !u!114 &3247186279903592051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,18 +190,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_d44205b3-78e7-4d2a-a98b-282516dbf3b5
+  m_Name: DialogueNode_ff32cf03-2029-4672-9119-23a3872590db
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 897
-    y: 427
+    x: 835
+    y: 541
     width: 200
     height: 80
-  text: "\u0442\u043E\u0436\u0435"
+  text: From
   isPlayerSpeaking: 0
---- !u!114 &8483345405250712357
+--- !u!114 &6986640157421458610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,14 +211,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_962a1eac-c80b-465d-ad1b-728444da9553
+  m_Name: DialogueNode_ab1c5781-aed3-4bb4-919f-c0a8d289aa8c
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 896
-    y: 524
+    x: 837
+    y: 186
     width: 200
     height: 80
-  text: "\u0441"
+  text: From
+  isPlayerSpeaking: 0
+--- !u!114 &7441186884724038614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_ea3f3043-f22f-4248-a3a9-94b17d052b0a
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 835
+    y: 725
+    width: 200
+    height: 80
+  text: Briak
   isPlayerSpeaking: 0

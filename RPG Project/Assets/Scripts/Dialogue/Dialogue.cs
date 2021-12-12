@@ -53,6 +53,11 @@ namespace Dialogue
             }
         }
 
+        public DialogueNode GetRootNode()
+        {
+            return nodes[0];
+        }
+
 #if UNITY_EDITOR
         public void CreateNode(DialogueNode parentNode)
         {
