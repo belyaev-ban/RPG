@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5765581985191801840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_6e1f2c7d-72f7-4702-b940-7c4bddf22edb
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1286
+    y: 529
+    width: 200
+    height: 80
+  text: 21
+  isPlayerSpeaking: 1
+--- !u!114 &-4062399961613385621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_9036abdd-5160-454a-bc4c-dfb49b51606d
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_44d57e46-e6d7-42a4-8f96-466fa941360f
+  - DialogueNode_570c4307-2035-4ce4-82f1-bdeda2f5edf0
+  editorRect:
+    serializedVersion: 2
+    x: 503
+    y: 442
+    width: 200
+    height: 80
+  text: Hamster
+  isPlayerSpeaking: 0
+--- !u!114 &-2960025486130512049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_44d57e46-e6d7-42a4-8f96-466fa941360f
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_65520f77-0649-43ac-9d0e-b798715bcb59
+  - DialogueNode_7a0ad11f-b41c-4452-9923-dbd517ea0050
+  editorRect:
+    serializedVersion: 2
+    x: 755
+    y: 328
+    width: 200
+    height: 80
+  text: Beaver
+  isPlayerSpeaking: 1
+--- !u!114 &-2712881856689480670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_51054fea-e4e2-44d9-a93d-c4339ca89346
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1311
+    y: 433
+    width: 200
+    height: 80
+  text: 12
+  isPlayerSpeaking: 1
+--- !u!114 &-2656108281727347226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_29a5f7cb-9ac1-4aa3-982c-cefbe62e59b5
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1321
+    y: 348
+    width: 200
+    height: 80
+  text: 11
+  isPlayerSpeaking: 1
+--- !u!114 &-1411683028956348869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_6b1c367c-1418-438a-abb2-647a83308f7b
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_6e1f2c7d-72f7-4702-b940-7c4bddf22edb
+  - DialogueNode_11e713d6-1613-4ce7-8cfb-4cac155f6ef6
+  editorRect:
+    serializedVersion: 2
+    x: 1033
+    y: 444
+    width: 200
+    height: 80
+  text: 2
+  isPlayerSpeaking: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
+  m_Name: New Dialogue
+  m_EditorClassIdentifier: 
+  windowSize: {x: 4000, y: 4000}
+  nodes:
+  - {fileID: -4062399961613385621}
+  - {fileID: -2960025486130512049}
+  - {fileID: 5263944609745375368}
+  - {fileID: 9186704811036123753}
+  - {fileID: -1411683028956348869}
+  - {fileID: 2405316544933701510}
+  - {fileID: 8651916562344375033}
+  - {fileID: 5555753165353970460}
+  - {fileID: 5278287896020249967}
+  - {fileID: -2656108281727347226}
+  - {fileID: -2712881856689480670}
+  - {fileID: -5765581985191801840}
+  - {fileID: 6493828433602818729}
+  - {fileID: 1040167670570016990}
+--- !u!114 &1040167670570016990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_24cadca3-474a-484b-8d95-8019fba0e22e
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1325
+    y: 749
+    width: 200
+    height: 80
+  text: 31
+  isPlayerSpeaking: 1
+--- !u!114 &2405316544933701510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_65520f77-0649-43ac-9d0e-b798715bcb59
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_29a5f7cb-9ac1-4aa3-982c-cefbe62e59b5
+  - DialogueNode_51054fea-e4e2-44d9-a93d-c4339ca89346
+  editorRect:
+    serializedVersion: 2
+    x: 1035
+    y: 337
+    width: 200
+    height: 80
+  text: 1
+  isPlayerSpeaking: 0
+--- !u!114 &5263944609745375368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_570c4307-2035-4ce4-82f1-bdeda2f5edf0
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_1b16359c-fee0-4250-9597-0ade33267285
+  - DialogueNode_6b1c367c-1418-438a-abb2-647a83308f7b
+  editorRect:
+    serializedVersion: 2
+    x: 756
+    y: 539
+    width: 200
+    height: 80
+  text: Not Beaver
+  isPlayerSpeaking: 1
+--- !u!114 &5278287896020249967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_b3ca6d36-6bd1-4b36-aebe-cb4eec6188e7
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1321
+    y: 258
+    width: 200
+    height: 80
+  text: 02
+  isPlayerSpeaking: 1
+--- !u!114 &5555753165353970460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_24ba6d43-c06b-4082-b349-7d34691bf453
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1314
+    y: 141
+    width: 200
+    height: 80
+  text: 01
+  isPlayerSpeaking: 1
+--- !u!114 &6493828433602818729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_11e713d6-1613-4ce7-8cfb-4cac155f6ef6
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 1297
+    y: 613
+    width: 200
+    height: 80
+  text: 22
+  isPlayerSpeaking: 1
+--- !u!114 &8651916562344375033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_7a0ad11f-b41c-4452-9923-dbd517ea0050
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_24ba6d43-c06b-4082-b349-7d34691bf453
+  - DialogueNode_b3ca6d36-6bd1-4b36-aebe-cb4eec6188e7
+  editorRect:
+    serializedVersion: 2
+    x: 1025
+    y: 206
+    width: 200
+    height: 80
+  text: 0
+  isPlayerSpeaking: 0
+--- !u!114 &9186704811036123753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_1b16359c-fee0-4250-9597-0ade33267285
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_24cadca3-474a-484b-8d95-8019fba0e22e
+  editorRect:
+    serializedVersion: 2
+    x: 1046
+    y: 630
+    width: 200
+    height: 80
+  text: 3
+  isPlayerSpeaking: 0
