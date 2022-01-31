@@ -29,6 +29,13 @@ namespace Dialogue
             return _currentNode.Text;
         }
 
+        public IEnumerable<string> GetChoices()
+        {
+            yield return "test 123";
+            yield return "test 3";
+            yield return "test 23";
+        }
+
         public void Next()
         {
             DialogueNode[] children = currentDialogue.GetAllChildren(_currentNode).ToArray();
