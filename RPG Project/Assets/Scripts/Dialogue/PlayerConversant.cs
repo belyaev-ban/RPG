@@ -13,6 +13,7 @@ namespace Dialogue
     {
         [SerializeField] private Dialogue currentDialogue;
         private DialogueNode _currentNode = null;
+        private bool _isChoosing = false;
 
         private void Awake()
         {
@@ -29,16 +30,26 @@ namespace Dialogue
             return _currentNode.Text;
         }
 
-        public IEnumerable<string> GetChoices()
+        public bool IsChoosing()
         {
-            yield return "test 123";
-            yield return "test 3";
-            yield return "test 23";
+            return _isChoosing;
+        }
+
+        public IEnumerable<DialogueNode> GetChoices()
+        {
+            return currentDialogue.GetPlayerChildren(_currentNode);
         }
 
         public void Next()
         {
-            DialogueNode[] children = currentDialogue.GetAllChildren(_currentNode).ToArray();
+            int numPlayerResponses = currentDialogue.GetPlayerChildren(_currentNode).Count();
+            if (numPlayerResponses > 0)
+            {
+                _isChoosing = true;
+                return;
+            }
+            
+            DialogueNode[] children = currentDialogue.GetAIChildren(_currentNode).ToArray();
             int randomIndex = Random.Range(0, children.Length);
             _currentNode = children[randomIndex];
         }

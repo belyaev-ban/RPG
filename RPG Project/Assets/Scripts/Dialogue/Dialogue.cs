@@ -53,6 +53,28 @@ namespace Dialogue
             }
         }
 
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode parentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(parentNode))
+            {
+                if (node.IsPlayerSpeaking)
+                {
+                    yield return node;
+                }
+            }
+        }
+
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode parentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(parentNode))
+            {
+                if (!node.IsPlayerSpeaking)
+                {
+                    yield return node;
+                }
+            }
+        }
+
         public DialogueNode GetRootNode()
         {
             return nodes[0];

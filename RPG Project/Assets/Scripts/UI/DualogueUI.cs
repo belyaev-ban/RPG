@@ -12,9 +12,9 @@ namespace RPG.UI
         private PlayerConversant _playerConversant;
         [SerializeField] private TextMeshProUGUI AIText;
         [SerializeField] private Button nextButton;
-        [SerializeField] private Transform choiceRoot;
         [SerializeField] private GameObject choicePrefab;
-        [SerializeField] private Transform AIResponseRoot;
+        [SerializeField] private Transform choiceRoot;
+        [SerializeField] private GameObject AIResponseRoot;
         
 
         // Start is called before the first frame update
@@ -34,20 +34,29 @@ namespace RPG.UI
 
         private void UpdateUI()
         {
-            AIText.text = _playerConversant.GetText();
-            nextButton.gameObject.SetActive(_playerConversant.HasNext());
-
-            // clear old choices
-            foreach (Transform item in choiceRoot)
-            {
-                Destroy(item.gameObject);
-            }
+            bool choosing = _playerConversant.IsChoosing();
+            AIResponseRoot.SetActive(!choosing);
+            choiceRoot.gameObject.SetActive(choosing);
             
-            // populate new choices
-            foreach (string choice in _playerConversant.GetChoices())
+            if (choosing)
             {
-                GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
-                choiceInstance.GetComponentInChildren<TextMeshProUGUI>().text = choice;
+                // clear old choices
+                foreach (Transform item in choiceRoot)
+                {
+                    Destroy(item.gameObject);
+                }
+            
+                // populate new choices
+                foreach (DialogueNode node in _playerConversant.GetChoices())
+                {
+                    GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
+                    choiceInstance.GetComponentInChildren<TextMeshProUGUI>().text = node.Text;
+                }
+            }
+            else
+            {
+                AIText.text = _playerConversant.GetText();
+                nextButton.gameObject.SetActive(_playerConversant.HasNext());
             }
         }
     }

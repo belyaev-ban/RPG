@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="Player choices and prefab">
+    <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Dialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Dialogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/Dialogue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/PlayerConversant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/PlayerConversant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DualogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DualogueUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
@@ -40,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ad584e208e14caaa9e6b2e6027e9204760400/44/9d252a0a/OnOpenAssetAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/f6/b20fad4c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/68/a50c0b79/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -118,7 +118,8 @@
       <workItem from="1642623928124" duration="595000" />
       <workItem from="1642710613199" duration="2496000" />
       <workItem from="1643149334408" duration="614000" />
-      <workItem from="1643666493077" duration="681000" />
+      <workItem from="1643666493077" duration="958000" />
+      <workItem from="1643754416794" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1631487562866</created>
@@ -239,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643150757073</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Instantiating dialogue options">
+      <created>1643667430596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643667430596</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +286,7 @@
     <MESSAGE value="Started connecting dialogue with ui" />
     <MESSAGE value="Traversing dialogue tree in random order" />
     <MESSAGE value="Player choices and prefab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player choices and prefab" />
+    <MESSAGE value="Instantiating dialogue options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Instantiating dialogue options" />
   </component>
 </project>
