@@ -58,6 +58,13 @@ namespace Dialogue
         {
             return currentDialogue.GetAllChildren(_currentNode).Any();
         }
+
+        public void SelectChoice(DialogueNode chosenNode)
+        {
+            _currentNode = chosenNode;
+            _isChoosing = false;
+            Next();
+        }
     }
 
 }
