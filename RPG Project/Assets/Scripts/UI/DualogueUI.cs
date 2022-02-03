@@ -15,25 +15,29 @@ namespace RPG.UI
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Transform choiceRoot;
         [SerializeField] private GameObject AIResponseRoot;
+        [SerializeField] private Button quitButton;
         
 
         // Start is called before the first frame update
         void Start()
         {
             _playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
-            nextButton.onClick.AddListener(Next);
+            _playerConversant.ConversationUpdated += UpdateUI;
+            
+            nextButton.onClick.AddListener(() => _playerConversant.Next());
+            quitButton.onClick.AddListener(() => _playerConversant.Quit());
             
             UpdateUI();
         }
-
-        private void Next()
-        {
-            _playerConversant.Next();
-            UpdateUI();
-        }
-
+        
         private void UpdateUI()
         {
+            gameObject.SetActive(_playerConversant.IsActive());
+            if (!_playerConversant.IsActive())
+            {
+                return;
+            }
+            
             bool choosing = _playerConversant.IsChoosing();
             AIResponseRoot.SetActive(!choosing);
             choiceRoot.gameObject.SetActive(choosing);
@@ -64,11 +68,7 @@ namespace RPG.UI
                 choiceInstance.GetComponentInChildren<TextMeshProUGUI>().text = node.Text;
 
                 Button button = choiceInstance.GetComponentInChildren<Button>();
-                button.onClick.AddListener(() =>
-                {
-                    _playerConversant.SelectChoice(node);
-                    UpdateUI();
-                });
+                button.onClick.AddListener(() => _playerConversant.SelectChoice(node));
             }
         }
     }

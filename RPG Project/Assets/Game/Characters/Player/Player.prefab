@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1363e1335a0f2d24795d6eba0e2c9f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: 84aee0d10b6008446b3b76776d2b7758, type: 2}
+  testDialogue: {fileID: 11400000, guid: 7cc5d81d48ed2e346b48103ada2abf5d, type: 2}
 --- !u!114 &2391086362736754212
 MonoBehaviour:
   m_ObjectHideFlags: 0
