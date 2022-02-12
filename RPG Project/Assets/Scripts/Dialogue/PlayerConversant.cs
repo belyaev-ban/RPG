@@ -8,23 +8,21 @@ namespace Dialogue
 {
     public class PlayerConversant : MonoBehaviour
     {
-        [SerializeField] private Dialogue testDialogue;
+        [SerializeField] private string playerName;
+        
         private Dialogue _currentDialogue;
         private DialogueNode _currentNode = null;
+        private AIConversant _currentConversant;
         private bool _isChoosing = false;
-
-        public event Action ConversationUpdated;
         
-        private IEnumerator Start()
-        {
-            yield return new WaitForSeconds(2);
-            StartDialogue(testDialogue);
-        }
+        public event Action ConversationUpdated;
 
-        public void StartDialogue(Dialogue newDialogue)
+        public void StartDialogue(Dialogue newDialogue, AIConversant newConversant)
         {
             _currentDialogue = newDialogue;
             _currentNode = _currentDialogue.GetRootNode();
+            _currentConversant = newConversant;
+            TriggerEnterAction();
             
             OnConversationUpdated();
         }
@@ -55,6 +53,7 @@ namespace Dialogue
             if (numPlayerResponses > 0)
             {
                 _isChoosing = true;
+                TriggerExitAction();
                 
                 OnConversationUpdated();
                 return;
@@ -62,7 +61,9 @@ namespace Dialogue
             
             DialogueNode[] children = _currentDialogue.GetAIChildren(_currentNode).ToArray();
             int randomIndex = UnityEngine.Random.Range(0, children.Length);
+            TriggerExitAction();
             _currentNode = children[randomIndex];
+            TriggerEnterAction();
             
             OnConversationUpdated();
         }
@@ -80,6 +81,7 @@ namespace Dialogue
         public void SelectChoice(DialogueNode chosenNode)
         {
             _currentNode = chosenNode;
+            TriggerEnterAction();
             _isChoosing = false;
             Next();
         }
@@ -92,10 +94,54 @@ namespace Dialogue
         public void Quit()
         {
             _currentDialogue = null;
+            TriggerExitAction();
             _currentNode = null;
+            _currentConversant = null;
             _isChoosing = false;
             
             OnConversationUpdated();
+        }
+
+        private void TriggerEnterAction()
+        {
+            if (_currentNode == null)
+            {
+                return;
+            }
+            
+            TriggerAction(_currentNode.GetOnEnterAction());
+        }
+
+        private void TriggerExitAction()
+        {
+            if (_currentNode == null)
+            {
+                return;
+            }
+
+            TriggerAction(_currentNode.GetOnExitAction());
+        }
+
+        private void TriggerAction(string action)
+        {
+            if (action == "") return;
+
+            foreach (DialogueTrigger dialogueTrigger in _currentConversant.GetComponents<DialogueTrigger>())
+            {
+                dialogueTrigger.Trigger(action);
+            }
+        }
+
+        public string GetCurrentConversantName()
+        {
+            if (_isChoosing)
+            {
+                return playerName;
+            }
+
+            string aiName = _currentConversant.GetName();
+
+            return aiName == "" ? _currentConversant.name : aiName;
         }
     }
 

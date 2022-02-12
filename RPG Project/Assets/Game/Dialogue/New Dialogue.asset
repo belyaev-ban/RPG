@@ -10,19 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_1120e804-8d33-41ee-92cd-5dd2d2ccde44
+  m_Name: DialogueNode_55b4d058-ea5e-4bd9-a5e1-b245429be9c8
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_9c156172-6f9a-4f19-a9bd-ae7d4161efd4
   - DialogueNode_8f9ea588-3493-4652-8900-7059b32ed87b
+  - DialogueNode_7130db64-357f-48f9-adc2-2c6d6f99312a
+  - DialogueNode_35b952cc-8d19-4c85-a2f9-4ba63a037da1
   editorRect:
     serializedVersion: 2
-    x: 1286
-    y: 529
+    x: 1283
+    y: 530
     width: 200
     height: 80
   text: 21
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &-4062399961613385621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +37,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_3292d4fc-2cbd-4554-9a4e-f6e8f129d666
+  m_Name: DialogueNode_a16c33d2-8da8-4af3-b4f9-42c70af9be48
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_44d57e46-e6d7-42a4-8f96-466fa941360f
@@ -44,6 +48,10 @@ MonoBehaviour:
   - DialogueNode_3a311716-5cf7-4aac-962a-a9ad37f330ee
   - DialogueNode_8e81992e-16cf-43db-82b2-9f2170898429
   - DialogueNode_f1532383-1de2-4138-978a-66a70800a370
+  - DialogueNode_82aaba6a-5e12-48a2-baf4-50fce87b7cc2
+  - DialogueNode_30d8c489-9e83-4cdf-ac6d-1d5fcc468efe
+  - DialogueNode_74f87728-0167-4825-a438-d88e6063a15f
+  - DialogueNode_547d3a05-2de9-40a8-9015-7d5618f8b3fe
   editorRect:
     serializedVersion: 2
     x: 503
@@ -52,6 +60,8 @@ MonoBehaviour:
     height: 80
   text: Hamster
   isPlayerSpeaking: 0
+  enterAction: TestRootEntry
+  exitAction: TestRootExit
 --- !u!114 &-2960025486130512049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +72,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_8e81992e-16cf-43db-82b2-9f2170898429
+  m_Name: DialogueNode_74f87728-0167-4825-a438-d88e6063a15f
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_65520f77-0649-43ac-9d0e-b798715bcb59
@@ -73,6 +83,10 @@ MonoBehaviour:
   - DialogueNode_cb26aa61-5b12-463a-99fc-1e970fef6f60
   - DialogueNode_dc9b1163-71fe-4ce0-afef-196b3c5773fc
   - DialogueNode_521d48a5-121b-48d4-b553-509b4e43fa5c
+  - DialogueNode_4c564ce4-19b4-44ad-9c28-f06cf4ac2c59
+  - DialogueNode_1041596d-43e4-439c-8047-b6ad84d255c4
+  - DialogueNode_38572e15-f924-42fc-8e32-375d095e5c5c
+  - DialogueNode_19876ec4-e183-4789-adc8-93fbd447aa52
   editorRect:
     serializedVersion: 2
     x: 757
@@ -81,6 +95,8 @@ MonoBehaviour:
     height: 80
   text: Beaver
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &-2712881856689480670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,19 +107,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_9d92cffe-c96b-463e-a469-8df5ef5176c2
+  m_Name: DialogueNode_9149c796-952e-4ecb-abd8-f749e776eba5
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_b2399011-e4ac-431a-9300-14ab217e9155
   - DialogueNode_57a4197f-b991-4941-b04d-bf82e38af215
+  - DialogueNode_450edcb4-ac6c-45c0-a999-841086a92a6f
+  - DialogueNode_be9dbda0-d36a-47da-b400-e27b5e5bfb22
   editorRect:
     serializedVersion: 2
-    x: 1311
-    y: 432
+    x: 1310
+    y: 433
     width: 200
     height: 80
   text: 12
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &-2656108281727347226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,11 +134,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_302cdf51-0543-4954-a877-22cd8bfd3f2e
+  m_Name: DialogueNode_f80a6b6b-520b-433e-a801-6e76032e32d8
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_53c7ae78-e4f2-4c3a-b720-d1999483cb6d
   - DialogueNode_948edf89-6421-4eb3-8fab-3241ffb5ce8a
+  - DialogueNode_d1f6ff3e-13b1-45d2-9b59-0deacd669374
+  - DialogueNode_8f520ec7-54ac-4ce0-88d3-cac31d63352b
   editorRect:
     serializedVersion: 2
     x: 1321
@@ -127,6 +149,8 @@ MonoBehaviour:
     height: 80
   text: 11
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,17 +196,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_8f9ea588-3493-4652-8900-7059b32ed87b
+  m_Name: DialogueNode_35b952cc-8d19-4c85-a2f9-4ba63a037da1
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 1496
+    x: 1495
     y: 529
     width: 200
     height: 80
   text: 56
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &1040167670570016990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,19 +219,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_58aa69ec-be22-4f7e-8956-371b11eb471d
+  m_Name: DialogueNode_a079e086-c8cb-4134-a0d1-e4d69296f8ea
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_6bd0b7a9-ae3b-4441-8cfb-1f6e3802662d
   - DialogueNode_d0669320-3137-4deb-87be-387d8eeacece
+  - DialogueNode_9d99d7da-6c7b-4aea-a347-01520e4d356e
+  - DialogueNode_ebb6582d-d0fd-4063-ad38-572122858b10
   editorRect:
     serializedVersion: 2
-    x: 1326
-    y: 751
+    x: 1329
+    y: 752
     width: 200
     height: 80
   text: 31
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &3186172133663672848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,12 +246,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_521d48a5-121b-48d4-b553-509b4e43fa5c
+  m_Name: DialogueNode_19876ec4-e183-4789-adc8-93fbd447aa52
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_d02bfd43-74cd-4276-85a4-114fe9ecbafe
   - DialogueNode_302cdf51-0543-4954-a877-22cd8bfd3f2e
   - DialogueNode_9d92cffe-c96b-463e-a469-8df5ef5176c2
+  - DialogueNode_cb2a086e-d0c1-4b66-b163-8952a4713345
+  - DialogueNode_55db2fac-794b-42d7-b919-5195158f42e3
+  - DialogueNode_9149c796-952e-4ecb-abd8-f749e776eba5
   editorRect:
     serializedVersion: 2
     x: 1017
@@ -230,6 +263,8 @@ MonoBehaviour:
     height: 80
   text: 
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &3560408444532403392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,17 +275,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_d0669320-3137-4deb-87be-387d8eeacece
+  m_Name: DialogueNode_ebb6582d-d0fd-4063-ad38-572122858b10
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 1535
-    y: 752
+    x: 1592
+    y: 764
     width: 200
     height: 80
   text: 78
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &3960958374947947929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +298,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_948edf89-6421-4eb3-8fab-3241ffb5ce8a
+  m_Name: DialogueNode_8f520ec7-54ac-4ce0-88d3-cac31d63352b
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -272,6 +309,8 @@ MonoBehaviour:
     height: 80
   text: 34
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &5263944609745375368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +321,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_f1532383-1de2-4138-978a-66a70800a370
+  m_Name: DialogueNode_547d3a05-2de9-40a8-9015-7d5618f8b3fe
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_1b16359c-fee0-4250-9597-0ade33267285
@@ -292,6 +331,10 @@ MonoBehaviour:
   - DialogueNode_f19a84bd-5412-488a-b528-a7bc888aa4c4
   - DialogueNode_19c01bfe-8c67-4bee-9160-8401c802483d
   - DialogueNode_704aeb4b-b629-49c8-a1e3-228f15cb4a5f
+  - DialogueNode_9c90ce15-e318-4296-a48a-aade28a92d02
+  - DialogueNode_d7705a1e-bc03-4dd1-9c03-c4e34b4e12ca
+  - DialogueNode_a742e00a-2558-42bf-b79e-faddd664efdb
+  - DialogueNode_53c8abc5-871f-4505-9582-c32bc264bf5f
   editorRect:
     serializedVersion: 2
     x: 756
@@ -300,6 +343,8 @@ MonoBehaviour:
     height: 80
   text: Not Beaver
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &5278287896020249967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,19 +355,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_d02bfd43-74cd-4276-85a4-114fe9ecbafe
+  m_Name: DialogueNode_55db2fac-794b-42d7-b919-5195158f42e3
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_e5ab4f1e-6eaf-4b9f-bb71-c7648aa332cd
   - DialogueNode_6617604e-79b0-49cd-bbdf-ff3c403fbe69
+  - DialogueNode_8dcfdff6-1890-43fd-ad1c-c57e56997eb0
+  - DialogueNode_55b274b2-5a12-41ad-8ce4-9cecdaa2ab0b
   editorRect:
     serializedVersion: 2
-    x: 1320
+    x: 1321
     y: 258
     width: 200
     height: 80
   text: 02
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &5555753165353970460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,11 +382,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_54a53440-ae0c-44e8-9f8e-4966bcc9f218
+  m_Name: DialogueNode_73b38cff-a178-4f0d-b51c-20cdf9ea9f62
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_58cd2c23-d8cc-41cb-b9eb-84b9802279a4
   - DialogueNode_c41836e5-ac0f-4fd5-b8d8-4d0e6486d57b
+  - DialogueNode_d44123e4-1216-4c3f-856c-d515d55e8e46
+  - DialogueNode_188f9008-e718-4ce2-b15d-ac7b69d0e940
   editorRect:
     serializedVersion: 2
     x: 1314
@@ -346,6 +397,8 @@ MonoBehaviour:
     height: 80
   text: 01
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &6493828433602818729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,19 +409,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_fc8b13e5-e37a-4b88-9279-cb00d17a27f5
+  m_Name: DialogueNode_d7a81800-725f-42cd-aeab-4a2ac6a2d5a5
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_a96145ff-d9db-46d7-8cc8-1bba6366deaf
   - DialogueNode_0cc9c539-92d9-4f49-ae8d-314e1a1a2974
+  - DialogueNode_b50e68fe-8c57-4eaa-8218-0fac4e1b6d32
+  - DialogueNode_c73ef655-bccf-4042-af56-96d339b57c17
   editorRect:
     serializedVersion: 2
-    x: 1293
+    x: 1290
     y: 614
     width: 200
     height: 80
   text: 22
   isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
 --- !u!114 &6735795313686639813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,17 +436,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_6617604e-79b0-49cd-bbdf-ff3c403fbe69
+  m_Name: DialogueNode_55b274b2-5a12-41ad-8ce4-9cecdaa2ab0b
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 1529
-    y: 258
+    x: 1526
+    y: 259
     width: 200
     height: 80
   text: 23
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &7935844016773073813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +459,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_c41836e5-ac0f-4fd5-b8d8-4d0e6486d57b
+  m_Name: DialogueNode_188f9008-e718-4ce2-b15d-ac7b69d0e940
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -411,6 +470,8 @@ MonoBehaviour:
     height: 80
   text: 22
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &8301689184185860437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,17 +482,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_57a4197f-b991-4941-b04d-bf82e38af215
+  m_Name: DialogueNode_be9dbda0-d36a-47da-b400-e27b5e5bfb22
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 1521
-    y: 432
+    x: 1520
+    y: 433
     width: 200
     height: 80
   text: 45
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &8651916562344375033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,7 +505,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_dc9b1163-71fe-4ce0-afef-196b3c5773fc
+  m_Name: DialogueNode_38572e15-f924-42fc-8e32-375d095e5c5c
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_24ba6d43-c06b-4082-b349-7d34691bf453
@@ -452,14 +515,20 @@ MonoBehaviour:
   - DialogueNode_970d00d1-6f35-41d4-86f2-9ccab98360c6
   - DialogueNode_b91f014f-8317-41ec-bd07-9849cb55c888
   - DialogueNode_54a53440-ae0c-44e8-9f8e-4966bcc9f218
+  - DialogueNode_0c4adc80-ec9b-408c-9c97-2ca7394beb1b
+  - DialogueNode_81cac20b-f5b5-401c-86a4-6f591a783dd8
+  - DialogueNode_73b38cff-a178-4f0d-b51c-20cdf9ea9f62
+  - DialogueNode_55db2fac-794b-42d7-b919-5195158f42e3
   editorRect:
     serializedVersion: 2
-    x: 1025
+    x: 1024
     y: 206
     width: 200
     height: 80
   text: 0
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &8961383111816901820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,12 +539,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_704aeb4b-b629-49c8-a1e3-228f15cb4a5f
+  m_Name: DialogueNode_a742e00a-2558-42bf-b79e-faddd664efdb
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_61869513-3001-4e57-b22f-9748b55c3b8a
   - DialogueNode_1120e804-8d33-41ee-92cd-5dd2d2ccde44
   - DialogueNode_fc8b13e5-e37a-4b88-9279-cb00d17a27f5
+  - DialogueNode_36ce47cd-9856-4d16-bf1b-672f1ade923d
+  - DialogueNode_2b81c912-4ac8-48dc-9ecb-9e08f3f21580
+  - DialogueNode_726beeaf-a9de-4ee1-bca3-243d4b0e6e2c
+  - DialogueNode_55b4d058-ea5e-4bd9-a5e1-b245429be9c8
   editorRect:
     serializedVersion: 2
     x: 1017
@@ -484,6 +557,8 @@ MonoBehaviour:
     height: 80
   text: 2
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &9027298972166196991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,17 +569,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_0cc9c539-92d9-4f49-ae8d-314e1a1a2974
+  m_Name: DialogueNode_c73ef655-bccf-4042-af56-96d339b57c17
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
     x: 1504
-    y: 614
+    y: 615
     width: 200
     height: 80
   text: 67
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
 --- !u!114 &9186704811036123753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +592,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_19c01bfe-8c67-4bee-9160-8401c802483d
+  m_Name: DialogueNode_53c8abc5-871f-4505-9582-c32bc264bf5f
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_24cadca3-474a-484b-8d95-8019fba0e22e
@@ -524,6 +601,9 @@ MonoBehaviour:
   - DialogueNode_3d19eade-0adf-4363-b78b-c75835faa0c3
   - DialogueNode_aef0a254-6404-48a0-becf-4a1c595ff142
   - DialogueNode_58aa69ec-be22-4f7e-8956-371b11eb471d
+  - DialogueNode_51b1bb59-86cf-45ee-ab77-f9677aee8755
+  - DialogueNode_d7a81800-725f-42cd-aeab-4a2ac6a2d5a5
+  - DialogueNode_a079e086-c8cb-4134-a0d1-e4d69296f8ea
   editorRect:
     serializedVersion: 2
     x: 1031
@@ -532,3 +612,5 @@ MonoBehaviour:
     height: 80
   text: 3
   isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 

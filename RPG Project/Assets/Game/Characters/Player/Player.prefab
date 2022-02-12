@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1363e1335a0f2d24795d6eba0e2c9f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 11400000, guid: 7cc5d81d48ed2e346b48103ada2abf5d, type: 2}
+  playerName: Hamster-Beaver
 --- !u!114 &2391086362736754212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +118,9 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   - type: 4
     texture: {fileID: 2800000, guid: f8c873f1e53e83f4aabf342d6be1dfc3, type: 3}
+    hotspot: {x: 0, y: 0}
+  - type: 6
+    texture: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
     hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-359408662550867197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_19139fb7-c89f-430d-80c7-d59d32b35d41
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_fb0edac2-8ef7-41af-a30b-58a323d23800
+  - DialogueNode_6918f4ba-792c-4427-935c-c92b7c2da01c
+  editorRect:
+    serializedVersion: 2
+    x: 549
+    y: 360
+    width: 200
+    height: 80
+  text: 1
+  isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20020754e2d077c45a6d80bb16361ff0, type: 3}
+  m_Name: Other Dialogue
+  m_EditorClassIdentifier: 
+  windowSize: {x: 4000, y: 4000}
+  nodes:
+  - {fileID: -359408662550867197}
+  - {fileID: 7927813710000351397}
+  - {fileID: 8751149732473288114}
+--- !u!114 &7927813710000351397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_6918f4ba-792c-4427-935c-c92b7c2da01c
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_fa369b62-97c5-45b6-b315-ee26d07cdadb
+  - DialogueNode_7e2b8384-caba-481c-875e-1ad13765abaa
+  editorRect:
+    serializedVersion: 2
+    x: 759
+    y: 359
+    width: 200
+    height: 80
+  text: 2
+  isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
+--- !u!114 &8751149732473288114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_7e2b8384-caba-481c-875e-1ad13765abaa
+  m_EditorClassIdentifier: 
+  children: []
+  editorRect:
+    serializedVersion: 2
+    x: 969
+    y: 359
+    width: 200
+    height: 80
+  text: 3
+  isPlayerSpeaking: 0
+  enterAction: 
+  exitAction: Attack

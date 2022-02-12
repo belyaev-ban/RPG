@@ -829,6 +829,7 @@ MonoBehaviour:
   choiceRoot: {fileID: 6501422563249226082}
   AIResponseRoot: {fileID: 772264054030246630}
   quitButton: {fileID: 972696666861782936}
+  conversantName: {fileID: 3716584295047903616}
 --- !u!1 &8619307934762082208
 GameObject:
   m_ObjectHideFlags: 0

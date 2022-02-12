@@ -11,11 +11,14 @@ namespace Dialogue
         [SerializeField] private List<string> children = new List<string>();
         [SerializeField] private Rect editorRect = new Rect(0, 0, 200, 80);
         [SerializeField] private string text;
-
         [SerializeField] private bool isPlayerSpeaking = false; //probably want to change it to enum later?
+        
+        [SerializeField] private string enterAction;
+        [SerializeField] private string exitAction;
 
         public List<string> Children => children;
         public Rect EditorRect => editorRect;
+        
 
         public string Text
         {
@@ -32,6 +35,16 @@ namespace Dialogue
         }
 
         public bool IsPlayerSpeaking => isPlayerSpeaking;
+
+        public string GetOnEnterAction()
+        {
+            return enterAction;
+        }
+
+        public string GetOnExitAction()
+        {
+            return exitAction;
+        }
 
 #if UNITY_EDITOR
         private void Awake()
@@ -54,14 +67,14 @@ namespace Dialogue
         public void RemoveChild(string nodeName)
         {
             Undo.RecordObject(this, "Removed dialogue link");
-            children.Remove(nodeName);
+            Children.Remove(nodeName);
             EditorUtility.SetDirty(this); //Fix for Undo not working correctly in subassets
         }
 
         public void AddChild(string nodeName)
         {
             Undo.RecordObject(this, "Add dialogue link");
-            children.Add(nodeName);
+            Children.Add(nodeName);
             EditorUtility.SetDirty(this); //Fix for Undo not working correctly in subassets
         }
 
