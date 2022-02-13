@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6778676004938317330}
   - component: {fileID: 5032775513078128754}
+  - component: {fileID: 3336083821810565082}
   m_Layer: 0
   m_Name: Quest
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.962997, y: 1.4149933}
+  m_AnchoredPosition: {x: 8.962982, y: 1.414978}
   m_SizeDelta: {x: 348.13, y: 102.831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5032775513078128754
@@ -64,6 +65,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &3336083821810565082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920945912961940527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371f576e6627d81468be450a0b20615b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipPrefab: {fileID: 1519848679233765053, guid: 54330db044d419e478ea60a12b5e6e0e,
+    type: 3}
 --- !u!1 &6421807248177665048
 GameObject:
   m_ObjectHideFlags: 0
