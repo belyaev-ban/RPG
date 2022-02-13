@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="Quest UI tooltips and toggling">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Objective.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Objective.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest Tooltip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest Tooltip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/GameDev.tv Assets/Scripts/UI/ShowHideUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/GameDev.tv Assets/Scripts/UI/ShowHideUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/New Dialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/Other Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/Other Dialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest Tooltip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest Tooltip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ad584e208e14caaa9e6b2e6027e9204760400/44/9d252a0a/OnOpenAssetAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/f6/b20fad4c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/68/a50c0b79/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/projects/unity/learn/rpg_dialog/RPG/RPG Project/Assets/Scenes/Sandbox.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -119,7 +116,7 @@
       <workItem from="1643841601231" duration="990000" />
       <workItem from="1643927447927" duration="1456000" />
       <workItem from="1644672241558" duration="8900000" />
-      <workItem from="1644746920431" duration="2040000" />
+      <workItem from="1644746920431" duration="5653000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1631487562866</created>
@@ -282,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644749566692</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Quest UI tooltips and toggling">
+      <created>1644755745238</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1644755745238</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

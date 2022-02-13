@@ -531,7 +531,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5225652759327637629}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.57281536
+  m_Size: 0.5728153
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -547,6 +547,7 @@ GameObject:
   - component: {fileID: 5297419918806482203}
   - component: {fileID: 8790628276878477824}
   - component: {fileID: 1683113384020445715}
+  - component: {fileID: 5146427579641258086}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -623,6 +624,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &5146427579641258086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5248715748389320825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54857d9e6f88764c8c03dbf0785b8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempQuests:
+  - {fileID: 11400000, guid: 461c8d7cf87f148418c4dfbae0f4799d, type: 2}
+  - {fileID: 11400000, guid: e534099b2895d054fa0b4c944c211702, type: 2}
+  questPrefab: {fileID: 5819596156679304047, guid: 3c2bc8a73418352409f55e670d58435f,
+    type: 3}
 --- !u!1 &6815283896731794443
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +983,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8646830083140261373}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 444.92453}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
