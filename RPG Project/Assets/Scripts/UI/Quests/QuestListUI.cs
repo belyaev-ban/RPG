@@ -5,17 +5,18 @@ using UnityEngine;
 
 public class QuestListUI : MonoBehaviour
 {
-    [SerializeField] private Quest[] tempQuests;
     [SerializeField] private QuestItemUI questPrefab;
 
     void Start()
     {
         transform.DetachChildren();
+
+        QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
         
-        foreach (Quest tempQuest in tempQuests)
+        foreach (QuestStatus questStatus in questList.GetStatuses())
         {
             QuestItemUI iuInstance = Instantiate<QuestItemUI>(questPrefab, transform);
-            iuInstance.Setup(tempQuest);
+            iuInstance.Setup(questStatus);
         }
     }
 }

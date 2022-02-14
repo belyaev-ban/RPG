@@ -124,6 +124,27 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
+--- !u!114 &1989559823303315201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902660786131331472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a6527f0ffcb9c44badf9241f2baf8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: 461c8d7cf87f148418c4dfbae0f4799d, type: 2}
+    completedObjectives:
+    - 1
+    - 2
+    - 3
+  - quest: {fileID: 11400000, guid: e534099b2895d054fa0b4c944c211702, type: 2}
+    completedObjectives:
+    - 2
 --- !u!1001 &1080417002832114521
 PrefabInstance:
   m_ObjectHideFlags: 0
