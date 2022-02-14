@@ -4,25 +4,29 @@ using UnityEngine;
 
 namespace Quests
 {
-    [System.Serializable]
     public class QuestStatus
     {
-        [SerializeField] private Quest quest;
-        [SerializeField] private List<string> completedObjectives;
+        private Quest _quest;
+        private List<string> _completedObjectives = new List<string>();
+
+        public QuestStatus(Quest newQuest)
+        {
+            _quest = newQuest;
+        }
 
         public Quest GetQuest()
         {
-            return quest;
+            return _quest;
         }
 
         public int CountCompletedObjectives()
         {
-            return completedObjectives.Count;
+            return _completedObjectives.Count;
         }
 
         public bool IsObjectiveComplete(string objective)
         {
-            return completedObjectives.Contains(objective);
+            return _completedObjectives.Contains(objective);
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,44 @@ namespace Quests
 {
     public class QuestList : MonoBehaviour
     {
-        [SerializeField] private QuestStatus[] statuses;
+        private List<QuestStatus> _statuses = new List<QuestStatus>();
+
+        public event Action QuestListUpdated;
+
+        public void OnQuestListUpdated()
+        {
+            QuestListUpdated?.Invoke();
+        }
 
         public IEnumerable<QuestStatus> GetStatuses()
         {
-            return statuses;
+            return _statuses;
+        }
+
+        public void AddQuest(Quest quest)
+        {
+            if (HasQuest(quest))
+            {
+                return;
+            }
+            
+            QuestStatus newStatus = new QuestStatus(quest);
+            _statuses.Add(newStatus);
+            
+            OnQuestListUpdated();
+        }
+
+        public bool HasQuest(Quest quest)
+        {
+            foreach (QuestStatus questStatus in _statuses)
+            {
+                if (questStatus.GetQuest() == quest)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
