@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_12215178-3102-42b5-aa39-2308685f820f
+  m_Name: DialogueNode_9ff6fa79-d4d2-4475-a7e3-6cce1557dc1c
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_aa80d0e0-f25d-4031-9c0d-bebe85e57a8b
+  - DialogueNode_928fa588-d170-44a9-a4e0-36e3fb0e01dc
   editorRect:
     serializedVersion: 2
     x: 1048
@@ -34,10 +35,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_14518a17-7e8e-4dfe-a476-814475cca7d7
+  m_Name: DialogueNode_30e30eed-275c-4b0f-8288-6b4d91939e17
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_b33530d1-466c-47dc-8904-672d33b7cd09
+  - DialogueNode_1ac7b240-1f46-4bb6-bf71-5d8898630206
   editorRect:
     serializedVersion: 2
     x: 1044
@@ -77,11 +79,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_add2ddcc-3e8a-4e71-9751-1d7338c679bf
+  m_Name: DialogueNode_9cfb8c49-5ab1-4731-963b-fdbd39324f6d
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_12215178-3102-42b5-aa39-2308685f820f
   - DialogueNode_14518a17-7e8e-4dfe-a476-814475cca7d7
+  - DialogueNode_9ff6fa79-d4d2-4475-a7e3-6cce1557dc1c
+  - DialogueNode_30e30eed-275c-4b0f-8288-6b4d91939e17
   editorRect:
     serializedVersion: 2
     x: 629
@@ -102,18 +106,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_aa80d0e0-f25d-4031-9c0d-bebe85e57a8b
+  m_Name: DialogueNode_928fa588-d170-44a9-a4e0-36e3fb0e01dc
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 1355
-    y: 264
+    x: 1367
+    y: 285
     width: 200
     height: 80
   text: No quest for you
   isPlayerSpeaking: 0
-  enterAction: 
+  enterAction: TestObjective
   exitAction: 
 --- !u!114 &8575684432645139511
 MonoBehaviour:
@@ -125,7 +129,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_b33530d1-466c-47dc-8904-672d33b7cd09
+  m_Name: DialogueNode_1ac7b240-1f46-4bb6-bf71-5d8898630206
   m_EditorClassIdentifier: 
   children: []
   editorRect:

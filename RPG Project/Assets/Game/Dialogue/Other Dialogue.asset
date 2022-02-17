@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_8a999cfa-48a2-47f6-8c11-81b930fd3f48
+  m_Name: DialogueNode_a5a6dcf7-ad70-4585-8dd0-c427431042e2
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_fb0edac2-8ef7-41af-a30b-58a323d23800
   - DialogueNode_6918f4ba-792c-4427-935c-c92b7c2da01c
   - DialogueNode_beb1b240-18b8-47ae-a263-dc323ab4e4a9
   - DialogueNode_ad4cfa0b-a314-4e5f-8ab7-0d346ef09b35
+  - DialogueNode_7b3d30a7-8030-4417-8c2b-bfb1da321d6f
   editorRect:
     serializedVersion: 2
-    x: 549
+    x: 548
     y: 360
     width: 200
     height: 80
@@ -54,13 +55,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_ad4cfa0b-a314-4e5f-8ab7-0d346ef09b35
+  m_Name: DialogueNode_7b3d30a7-8030-4417-8c2b-bfb1da321d6f
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_fa369b62-97c5-45b6-b315-ee26d07cdadb
   - DialogueNode_7e2b8384-caba-481c-875e-1ad13765abaa
   - DialogueNode_99216ac0-62ab-4ce5-bde7-a47dbfaca9e2
   - DialogueNode_44739aff-8859-47fb-9905-0a755330ae49
+  - DialogueNode_e2972cf7-8bd3-4cfb-afdf-3a3fa68dae9e
   editorRect:
     serializedVersion: 2
     x: 759
@@ -81,12 +83,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_44739aff-8859-47fb-9905-0a755330ae49
+  m_Name: DialogueNode_e2972cf7-8bd3-4cfb-afdf-3a3fa68dae9e
   m_EditorClassIdentifier: 
   children: []
   editorRect:
     serializedVersion: 2
-    x: 969
+    x: 970
     y: 359
     width: 200
     height: 80

@@ -36,15 +36,28 @@ namespace Quests
 
         public bool HasQuest(Quest quest)
         {
+            return GetQuestStatus(quest) != null;
+        }
+
+        public void CompleteObjective(Quest quest, string objective)
+        {
+            QuestStatus questStatus = GetQuestStatus(quest);
+            questStatus?.CompleteObjective(objective);
+            
+            OnQuestListUpdated();
+        }
+
+        private QuestStatus GetQuestStatus(Quest quest)
+        {
             foreach (QuestStatus questStatus in _statuses)
             {
                 if (questStatus.GetQuest() == quest)
                 {
-                    return true;
+                    return questStatus;
                 }
             }
 
-            return false;
+            return null;
         }
     }
 }

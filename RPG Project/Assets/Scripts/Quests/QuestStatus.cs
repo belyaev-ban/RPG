@@ -28,5 +28,13 @@ namespace Quests
         {
             return _completedObjectives.Contains(objective);
         }
+
+        public void CompleteObjective(string objective)
+        {
+            if (_quest.HasObjective(objective) && !_completedObjectives.Contains(objective))
+            {
+                _completedObjectives.Add(objective);
+            }
+        }
     }
 }
