@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using UnityEngine;
 
 namespace Quests
@@ -7,14 +8,29 @@ namespace Quests
     [CreateAssetMenu(fileName = "Quest", menuName = "RPG Project/Quest", order = 0)]
     public class Quest : ScriptableObject
     {
-        [SerializeField] private List<string> objectives = new List<string>();
+        [SerializeField] private List<Objective> objectives = new List<Objective>();
+        [SerializeField] private List<Reward> rewards = new List<Reward>();
 
+        [System.Serializable]
+        private class Reward
+        {
+            public int amount;
+            public InventoryItem item;
+        }
+        
+        [System.Serializable]
+        public class Objective
+        {
+            public string reference;
+            public string description;
+        }
+        
         public string GetTitle()
         {
             return name;
         }
 
-        public IEnumerable<string> GetObjectives()
+        public IEnumerable<Objective> GetObjectives()
         {
             return objectives;
         }
@@ -24,9 +40,17 @@ namespace Quests
             return objectives.Count;
         }
 
-        public bool HasObjective(string objective)
+        public bool HasObjective(string objectiveReference)
         {
-            return objectives.Contains(objective);
+            foreach (Objective objective in objectives)
+            {
+                if (objectiveReference == objective.reference)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

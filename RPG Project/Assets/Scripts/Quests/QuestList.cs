@@ -39,7 +39,7 @@ namespace Quests
             return GetQuestStatus(quest) != null;
         }
 
-        public void CompleteObjective(Quest quest, string objective)
+        public void CompleteObjective(Quest quest, Quest.Objective objective)
         {
             QuestStatus questStatus = GetQuestStatus(quest);
             questStatus?.CompleteObjective(objective);

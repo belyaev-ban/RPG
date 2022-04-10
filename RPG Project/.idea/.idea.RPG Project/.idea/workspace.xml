@@ -4,11 +4,13 @@
     <list default="true" id="5d3c052c-41d5-4f89-bdd3-f9141a372d94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quests/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quests/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestCompletion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestCompletion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quests/QuestStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
@@ -41,6 +43,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5ad584e208e14caaa9e6b2e6027e9204760400/44/9d252a0a/OnOpenAssetAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/f6/b20fad4c/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/59/afb260d2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/68/a50c0b79/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -126,7 +129,10 @@
       <workItem from="1644672241558" duration="8900000" />
       <workItem from="1644746920431" duration="5950000" />
       <workItem from="1644865748066" duration="4848000" />
-      <workItem from="1645125458056" duration="2245000" />
+      <workItem from="1645125458056" duration="3455000" />
+      <workItem from="1649523233348" duration="240000" />
+      <workItem from="1649621568964" duration="22000" />
+      <workItem from="1649623676958" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1631487562866</created>
@@ -317,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644871222519</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Quest objectives completion">
+      <created>1645127745775</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1645127745775</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +352,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="changing text and uids through editor window" />
     <MESSAGE value="dragging nodes" />
     <MESSAGE value="Adding and removing dialogue nodes" />
     <MESSAGE value="Linking and unlinking nodes from the editor" />
@@ -364,6 +376,7 @@
     <MESSAGE value="Populating Quest tooltip with quest data" />
     <MESSAGE value="Quest objectives" />
     <MESSAGE value="Adding quests and UpdateUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding quests and UpdateUI" />
+    <MESSAGE value="Quest objectives completion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quest objectives completion" />
   </component>
 </project>

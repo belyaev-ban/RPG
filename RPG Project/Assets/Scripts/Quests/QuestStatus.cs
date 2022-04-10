@@ -7,7 +7,7 @@ namespace Quests
     public class QuestStatus
     {
         private Quest _quest;
-        private List<string> _completedObjectives = new List<string>();
+        private List<string> _completedObjectivesReferences = new List<string>();
 
         public QuestStatus(Quest newQuest)
         {
@@ -21,19 +21,19 @@ namespace Quests
 
         public int CountCompletedObjectives()
         {
-            return _completedObjectives.Count;
+            return _completedObjectivesReferences.Count;
         }
 
-        public bool IsObjectiveComplete(string objective)
+        public bool IsObjectiveComplete(string objectiveReference)
         {
-            return _completedObjectives.Contains(objective);
+            return _completedObjectivesReferences.Contains(objectiveReference);
         }
 
-        public void CompleteObjective(string objective)
+        public void CompleteObjective(Quest.Objective objective)
         {
-            if (_quest.HasObjective(objective) && !_completedObjectives.Contains(objective))
+            if (_quest.HasObjective(objective.reference) && !_completedObjectivesReferences.Contains(objective.reference))
             {
-                _completedObjectives.Add(objective);
+                _completedObjectivesReferences.Add(objective.reference);
             }
         }
     }

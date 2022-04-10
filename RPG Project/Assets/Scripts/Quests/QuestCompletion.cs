@@ -5,7 +5,7 @@ namespace Quests
     public class QuestCompletion : MonoBehaviour
     {
         [SerializeField] private Quest quest;
-        [SerializeField] private string questObjective;
+        [SerializeField] private Quest.Objective questObjective;
 
         public void CompleteObjective()
         {

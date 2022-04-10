@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Find the missing sock
   m_EditorClassIdentifier: 
   objectives:
-  - 2
-  - 3
-  - 4
-  - test objective
+  - reference: 1
+    description: description1
+  - reference: 2
+    description: description2
+  - reference: 3
+    description: description3
+  - reference: 4
+    description: description4
+  rewards: []
