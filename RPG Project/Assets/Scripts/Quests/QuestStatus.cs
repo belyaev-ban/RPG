@@ -19,6 +19,19 @@ namespace Quests
             return _quest;
         }
 
+        public bool IsComplete()
+        {
+            foreach (Quest.Objective objective in _quest.GetObjectives())
+            {
+                if (!_completedObjectivesReferences.Contains(objective.reference))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        
         public int CountCompletedObjectives()
         {
             return _completedObjectivesReferences.Count;
