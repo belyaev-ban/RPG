@@ -14,6 +14,7 @@ namespace Quests
         [System.Serializable]
         public class Reward
         {
+            [Min(1)] 
             public int amount;
             public InventoryItem item;
         }

@@ -33,7 +33,13 @@ public class QuestTooltipUI : MonoBehaviour
             objectiveText.text = objective.description;
         }
 
+        rewardsContainer.text = GetRewardText(quest);
+    }
+    
+    private string GetRewardText(Quest quest)
+    {
         List<string> rewards = new List<string>();
+
         foreach (Quest.Reward reward in quest.GetRewards())
         {
             if (reward.amount > 1)
@@ -46,6 +52,7 @@ public class QuestTooltipUI : MonoBehaviour
             }
         }
 
-        rewardsContainer.text = String.Join(", ", rewards);
+        string result = String.Join(", ", rewards);
+        return result != "" ? result : "No reward";
     }
 }
