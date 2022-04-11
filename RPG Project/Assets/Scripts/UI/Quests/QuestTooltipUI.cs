@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Quests;
 using TMPro;
 using UnityEngine;
@@ -9,9 +11,10 @@ public class QuestTooltipUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private Transform objectiveContainer;
+    [SerializeField] private TextMeshProUGUI rewardsContainer;
     [FormerlySerializedAs("objectivePrefab")] [SerializeField] private GameObject objectiveCompletePrefab;
     [SerializeField] private GameObject objectiveIncompletePrefab;
-    
+
     public void Setup(QuestStatus questStatus)
     {
         Quest quest = questStatus.GetQuest();
@@ -29,5 +32,20 @@ public class QuestTooltipUI : MonoBehaviour
             TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
             objectiveText.text = objective.description;
         }
+
+        List<string> rewards = new List<string>();
+        foreach (Quest.Reward reward in quest.GetRewards())
+        {
+            if (reward.amount > 1)
+            {
+                rewards.Add($"{reward.item.GetDisplayName()} x{reward.amount}");
+            }
+            else
+            {
+                rewards.Add($"{reward.item.GetDisplayName()}");
+            }
+        }
+
+        rewardsContainer.text = String.Join(", ", rewards);
     }
 }

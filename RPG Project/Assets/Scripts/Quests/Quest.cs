@@ -12,7 +12,7 @@ namespace Quests
         [SerializeField] private List<Reward> rewards = new List<Reward>();
 
         [System.Serializable]
-        private class Reward
+        public class Reward
         {
             public int amount;
             public InventoryItem item;
@@ -51,6 +51,12 @@ namespace Quests
             }
 
             return false;
+        }
+
+
+        public IEnumerable<Reward> GetRewards()
+        {
+            return rewards;
         }
     }
 }

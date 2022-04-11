@@ -21,4 +21,8 @@ MonoBehaviour:
     description: description3
   - reference: 4
     description: description4
-  rewards: []
+  rewards:
+  - amount: 5
+    item: {fileID: 11400000, guid: c2a2bd9b5a47ec64daeb6cdb3c2f18ee, type: 2}
+  - amount: 1
+    item: {fileID: 11400000, guid: 0071fb8ea1b0df04baa6fd317f52b9a2, type: 2}
