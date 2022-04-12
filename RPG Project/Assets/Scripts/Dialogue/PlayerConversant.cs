@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using RPG.Core;
 using UnityEngine;
 
 namespace Dialogue
@@ -44,12 +45,12 @@ namespace Dialogue
 
         public IEnumerable<DialogueNode> GetChoices()
         {
-            return _currentDialogue.GetPlayerChildren(_currentNode);
+            return FilterOnCondition(_currentDialogue.GetPlayerChildren(_currentNode));
         }
 
         public void Next()
         {
-            int numPlayerResponses = _currentDialogue.GetPlayerChildren(_currentNode).Count();
+            int numPlayerResponses = FilterOnCondition(_currentDialogue.GetPlayerChildren(_currentNode)).Count();
             if (numPlayerResponses > 0)
             {
                 _isChoosing = true;
@@ -59,7 +60,7 @@ namespace Dialogue
                 return;
             }
             
-            DialogueNode[] children = _currentDialogue.GetAIChildren(_currentNode).ToArray();
+            DialogueNode[] children = FilterOnCondition(_currentDialogue.GetAIChildren(_currentNode)).ToArray();
             int randomIndex = UnityEngine.Random.Range(0, children.Length);
             TriggerExitAction();
             _currentNode = children[randomIndex];
@@ -70,7 +71,7 @@ namespace Dialogue
 
         public bool HasNext()
         {
-            return _currentDialogue.GetAllChildren(_currentNode).Any();
+            return FilterOnCondition(_currentDialogue.GetAllChildren(_currentNode)).Any();
         }
 
         public bool IsActive()
@@ -142,6 +143,22 @@ namespace Dialogue
             string aiName = _currentConversant.GetName();
 
             return aiName == "" ? _currentConversant.name : aiName;
+        }
+
+        private IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
+        {
+            foreach (DialogueNode node in inputNode)
+            {
+                if (node.CheckCondition(GetEvaluators()))
+                {
+                    yield return node;
+                }
+            }
+        }
+
+        private IEnumerable<IPredicateEvaluator> GetEvaluators()
+        {
+            return GetComponents<IPredicateEvaluator>();
         }
     }
 
