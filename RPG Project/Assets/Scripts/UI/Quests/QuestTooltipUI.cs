@@ -20,7 +20,10 @@ public class QuestTooltipUI : MonoBehaviour
         Quest quest = questStatus.GetQuest();
         
         title.text = quest.GetTitle();
-        objectiveContainer.DetachChildren();
+        foreach (Transform item in objectiveContainer)
+        {
+            Destroy(item.gameObject);
+        }
 
         foreach (Quest.Objective objective in quest.GetObjectives())
         {

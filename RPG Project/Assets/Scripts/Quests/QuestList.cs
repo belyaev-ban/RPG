@@ -65,15 +65,21 @@ namespace Quests
 
             return null;
         }
+        
+        private QuestStatus GetQuestStatus(string questName)
+        {
+            return GetQuestStatus(Quest.GetByName(questName));
+        }
 
         public bool? Evaluate(string predicate, string[] parameters)
         {
-            if (predicate != "HasQuest")
+            switch (predicate)
             {
-                return null;
+                case "HasQuest": return HasQuest(parameters[0]);
+                case "Completed": return GetQuestStatus(parameters[0]).IsComplete();
             }
 
-            return HasQuest(parameters[0]);
+            return null;
         }
     }
 }

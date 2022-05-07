@@ -19,7 +19,10 @@ public class QuestListUI : MonoBehaviour
 
     private void UpdateUI()
     {
-        transform.DetachChildren();
+        foreach (Transform item in transform)
+        {
+            Destroy(item.gameObject);
+        }
         
         foreach (QuestStatus questStatus in _questList.GetStatuses())
         {
