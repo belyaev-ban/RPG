@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_48a348e5-90a0-4b6d-ab0e-2cd2a731ee29
+  m_Name: DialogueNode_8cde6560-c06e-4bb4-b5f4-df04d0c8b90d
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_9c156172-6f9a-4f19-a9bd-ae7d4161efd4
@@ -29,6 +29,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &-4062399961613385621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +41,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_cafe7451-c429-467a-a331-d544d1dc0798
+  m_Name: DialogueNode_f31bfe9d-8314-4969-a7e5-ab11fb30ad1c
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_44d57e46-e6d7-42a4-8f96-466fa941360f
@@ -58,6 +60,7 @@ MonoBehaviour:
   - DialogueNode_b20cf60d-5f6b-4bee-bc84-366ef0283ae2
   - DialogueNode_1d2af75f-9660-43c7-b84c-fd1bcd09c94a
   - DialogueNode_f0eb6ad0-afda-4eef-8f08-ff2f8e89da91
+  - DialogueNode_e4ed91dc-3e15-4d9a-9587-5b45ea2757ac
   editorRect:
     serializedVersion: 2
     x: 503
@@ -68,6 +71,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: TestRootEntry
   exitAction: TestRootExit
+  condition:
+    and: []
 --- !u!114 &-2960025486130512049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +83,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_1d2af75f-9660-43c7-b84c-fd1bcd09c94a
+  m_Name: DialogueNode_68c50008-9e71-420b-a231-a5b376980c59
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_65520f77-0649-43ac-9d0e-b798715bcb59
@@ -107,6 +112,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &-2712881856689480670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +124,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_3df7e161-8217-4047-ba6d-992fc98785c0
+  m_Name: DialogueNode_1accb80a-752c-47df-808c-94c5b00dd70a
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_b2399011-e4ac-431a-9300-14ab217e9155
@@ -136,6 +143,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &-2656108281727347226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +155,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_afa997d6-aea7-4276-847a-0e4e79de61c9
+  m_Name: DialogueNode_7ae6afda-ab49-48d0-9ae0-1ee06827f69a
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_53c7ae78-e4f2-4c3a-b720-d1999483cb6d
@@ -165,6 +174,34 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
+--- !u!114 &-935169906111775676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
+  m_Name: DialogueNode_e4ed91dc-3e15-4d9a-9587-5b45ea2757ac
+  m_EditorClassIdentifier: 
+  children:
+  - DialogueNode_1177eaea-57bc-483e-9a89-ce52a121c386
+  editorRect:
+    serializedVersion: 2
+    x: 764
+    y: 440
+    width: 200
+    height: 80
+  text: 
+  isPlayerSpeaking: 1
+  enterAction: 
+  exitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +237,7 @@ MonoBehaviour:
   - {fileID: 3560408444532403392}
   - {fileID: 3186172133663672848}
   - {fileID: 3456031234877557647}
+  - {fileID: -935169906111775676}
 --- !u!114 &1024133939599931489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +248,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_bce5a511-c388-41ee-91a0-3532c374cd3a
+  m_Name: DialogueNode_2db86349-ede8-45af-a8f8-46d5d3c6f999
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -223,6 +261,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &1040167670570016990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +273,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_7dc40741-ac30-460b-885f-3b0bb922b7a2
+  m_Name: DialogueNode_196ed3e6-cb24-40c4-96da-4c94f6840e1e
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_6bd0b7a9-ae3b-4441-8cfb-1f6e3802662d
@@ -252,6 +292,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &3186172133663672848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +304,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_a953bb37-f8ac-4ee8-8e4a-5cd9edfc9d77
+  m_Name: DialogueNode_bd1eec0d-4dc1-4ea5-8885-3e640e254727
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_d02bfd43-74cd-4276-85a4-114fe9ecbafe
@@ -285,6 +327,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &3456031234877557647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +339,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_becc84ce-8a1d-421e-99bf-876f61880dd3
+  m_Name: DialogueNode_e89dce0e-d7c2-4955-bdc6-4d090557f434
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -308,6 +352,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &3560408444532403392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +364,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_85735cd1-0808-455b-b278-ceaef940f721
+  m_Name: DialogueNode_d5d06bcb-7d3e-401b-aa00-5aebd1e38c32
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -331,6 +377,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &3960958374947947929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +389,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_a1c9fad6-8d89-482c-8558-ccf6a260b570
+  m_Name: DialogueNode_3e6013c4-96b1-4324-a615-3089eaf8c11e
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -354,6 +402,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &5263944609745375368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +414,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_f0eb6ad0-afda-4eef-8f08-ff2f8e89da91
+  m_Name: DialogueNode_2de54f3c-2afb-48be-83c4-6c0508c58e3b
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_1b16359c-fee0-4250-9597-0ade33267285
@@ -392,6 +442,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &5278287896020249967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +454,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_8a645f35-b394-43bf-a681-b6b41601222f
+  m_Name: DialogueNode_99a6b15d-2d6b-440b-8230-335efebe289c
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_e5ab4f1e-6eaf-4b9f-bb71-c7648aa332cd
@@ -421,6 +473,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &5555753165353970460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,7 +485,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_115facc0-ffd6-4bdd-9631-b9619eecb078
+  m_Name: DialogueNode_ca0eb278-6b59-4a43-8486-37d4170674f6
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_58cd2c23-d8cc-41cb-b9eb-84b9802279a4
@@ -450,6 +504,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &6493828433602818729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,7 +516,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_2a56c9f4-8add-4b03-8741-fb8efd702aee
+  m_Name: DialogueNode_774115f1-3867-4e78-84f3-3bab784e6259
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_a96145ff-d9db-46d7-8cc8-1bba6366deaf
@@ -479,6 +535,8 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &6735795313686639813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +547,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_cd0492f1-f4b4-4416-b0fd-d505a720cb1a
+  m_Name: DialogueNode_8b50e5fe-a3ce-4a51-a4e2-1115d5bbd090
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -502,6 +560,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &7935844016773073813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +572,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_096b7c8a-fda7-4d8c-bc69-36d18f07d703
+  m_Name: DialogueNode_6b6eb5c4-8897-488c-abc4-c3b1e9391aa5
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -525,6 +585,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &8301689184185860437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +597,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_bd63c135-78de-4199-90a2-19673a61a366
+  m_Name: DialogueNode_fdb7e40e-1b2c-4289-b3a9-91913a797533
   m_EditorClassIdentifier: 
   children: []
   editorRect:
@@ -548,6 +610,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &8651916562344375033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +622,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_9aa13ac5-e590-48c1-b0c0-043250fd6010
+  m_Name: DialogueNode_56e53873-5c9b-4f3e-96a5-7ce9b5f3ca99
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_24ba6d43-c06b-4082-b349-7d34691bf453
@@ -585,6 +649,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &8961383111816901820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,7 +661,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_7ab786e4-20c8-41b8-b376-b00c580f6634
+  m_Name: DialogueNode_1177eaea-57bc-483e-9a89-ce52a121c386
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_61869513-3001-4e57-b22f-9748b55c3b8a
@@ -618,6 +684,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []
 --- !u!114 &9186704811036123753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,7 +696,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a28dc50c33547e9bef115dd792933bc, type: 3}
-  m_Name: DialogueNode_d703d0ed-3a57-4cd2-8f24-7436d1da0468
+  m_Name: DialogueNode_c8fede38-2228-4f2a-935a-d6982776ef2c
   m_EditorClassIdentifier: 
   children:
   - DialogueNode_24cadca3-474a-484b-8d95-8019fba0e22e
@@ -654,3 +722,5 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   enterAction: 
   exitAction: 
+  condition:
+    and: []

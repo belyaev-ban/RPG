@@ -85,6 +85,7 @@ namespace Dialogue
         {
             DialogueNode newNode = CreateInstance<DialogueNode>();
             Undo.RegisterCreatedObjectUndo(newNode, "Created DialogueNode");
+            newNode.name = "DialogueNode_" + Guid.NewGuid();
             if (parentNode != null)
             {
                 parentNode.AddChild(newNode.name);

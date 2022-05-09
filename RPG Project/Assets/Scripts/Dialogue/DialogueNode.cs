@@ -55,11 +55,6 @@ namespace Dialogue
         }
 
 #if UNITY_EDITOR
-        private void Awake()
-        {
-            name = "DialogueNode_" + Guid.NewGuid().ToString();
-        }
-
         public void SetPosition(Vector2 newPosition)
         {
             Undo.RecordObject(this, "Dialogue node moved");
